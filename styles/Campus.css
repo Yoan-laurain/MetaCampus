@@ -1,0 +1,171 @@
+@charset "ISO-8859-1";
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body 
+{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	background-color: #F6F8FA;
+}
+
+main {
+    width: 100%;
+    min-height: 50vw;
+    margin: auto;
+}
+
+
+/****************************************************
+_   _               _                
+| \ | |             | |               
+|  \| | __ ___   __ | |__   __ _ _ __ 
+| . ` |/ _` \ \ / / | '_ \ / _` | '__|
+| |\  | (_| |\ V /  | |_) | (_| | |   
+\_| \_/\__,_| \_/   |_.__/ \__,_|_|   
+												
+****************************************************/
+#Navigation{
+	background-color: transparent;
+	width: calc(100% - 48px);
+	height: 40px;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	position: fixed;
+	top: 0px;
+	z-index: 999999;
+	background-image: url("../images/Logo.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-position-x: 1vw;
+
+	background-size: 4vw;
+}
+
+#menuNav {
+	width: fit-content;
+	float: right;
+}
+
+#menuNav  ul {
+	display: flex;
+	margin-left: 230px;
+}
+#menuNav li {
+	display: table-cell;
+}
+
+#menuNav a, #menuNav span {
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	min-width: 40px;
+	min-height: 40px;
+	display: block;
+	line-height: 40px;
+	margin-right: 1vw;
+	transition: all 0.2s ease-in-out;
+}
+
+/****************************************************
+______          _            
+|  ___|        | |           
+| |_ ___   ___ | |_ ___ _ __ 
+|  _/ _ \ / _ \| __/ _ \ '__|
+| || (_) | (_) | ||  __/ |   
+\_| \___/ \___/ \__\___|_|  
+
+****************************************************/
+
+
+footer .footerdown a {
+	text-decoration: none;
+	color: #6C6C6C;
+}
+
+footer .footerdown {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    height: 4vw;
+}
+
+/*****************************************************************************Accueil***************************************************************/
+/**************************************************************************************************************************************************/
+
+#topAccueil
+{
+	height : 50vw;
+	background-image: url("../images/FondAccueil.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+}
+
+#TopTexte
+{
+	padding-top:10vw;
+	height:10vw;
+	width:40vw;
+	margin-left:15vw;
+	color:white;
+}
+
+#TopTexte h1{
+	font-size:5vw;
+	font-weight: bold;
+}
+
+#TopTexte h2{
+	font-size:2vw;
+	margin-top:3vw;
+	font-weight: 600;
+}
+
+#TopTexte h3{
+	font-size:1.5vw;
+	margin-top:3vw;
+	font-weight: 400;
+	margin-bottom: 2vw;
+}
+
+#bodyAccueil
+{
+	height : 50vw;
+}
+
+#bouttonAccueil
+{
+    font-weight: 900;
+    font-size: 1vw;
+    height: 3vw;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+	width : 15vw;
+	background: linear-gradient(
+	120deg,rgba(255,74,158,0) 0%,#ff3190 0%);
+	box-shadow: 0 12px 24px -6px rgb(255 74 158 / 20%);
+	padding: 12px 32px;
+}
+
+#TopGif
+{
+	padding-top :2vw;
+}
+
+#TopGif img{
+	height: 40vw;
+	width:40vw;
+}
+
+
+
