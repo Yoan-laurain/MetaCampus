@@ -5,7 +5,7 @@
 }
 html, body 
 {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	background-color: #F6F8FA;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	background-color: black;
 }
 
 main {
@@ -81,7 +81,6 @@ ______          _
 
 footer .footerdown a {
 	text-decoration: none;
-	color: #6C6C6C;
 }
 
 footer .footerdown {
@@ -92,6 +91,7 @@ footer .footerdown {
     display: flex;
     flex-direction: column;
     height: 4vw;
+	color: white;
 }
 
 /*****************************************************************************Accueil***************************************************************/
@@ -100,9 +100,6 @@ footer .footerdown {
 #topAccueil
 {
 	height : 50vw;
-	background-image: url("../images/FondAccueil.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
 	display: flex;
 	flex-direction: row;
 }

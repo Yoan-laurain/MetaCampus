@@ -16,7 +16,7 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("topAccueil"));
         $accueil->ajouterComposantLigne($accueil->finDiv());
 
         $accueil->ajouterComposantLigne($accueil->debutDiv("TopGif"));
-            $accueil->ajouterComposantLigne($accueil->creerImage("images\Gif.gif"));
+            $accueil->ajouterComposantLigne($accueil->creerImage("images\Crypto.gif"));
         $accueil->ajouterComposantLigne($accueil->finDiv());
 
 $accueil->ajouterComposantLigne($accueil->finDiv());
