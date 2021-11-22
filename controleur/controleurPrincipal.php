@@ -2,13 +2,27 @@
 
 // Recupere dans l'url le menu ou en defini un si existe pas
 
-if(isset($_GET['AlternaDom'])){
-	$_SESSION['AlternaDom'] = $_GET['AlternaDom'];
+if(isset($_GET['MetaCampus'])){
+	$_SESSION['MetaCampus'] = $_GET['MetaCampus'];
 }
 else
 {
-	if(!isset($_SESSION['AlternaDom'])){
-		$_SESSION['AlternaDom'] = "accueil";
+	if(!isset($_SESSION['MetaCampus'])){
+		$_SESSION['MetaCampus'] = "accueil";
+	}
+}
+
+//Pour se connecter automatiquement grâce au cookies//
+
+if(!isset($_SESSION['identification']) && isset($_COOKIE['jeton']))
+{
+	$_SESSION['identification'] = UtilisateurDAO::lire($_COOKIE['jeton']);
+	
+	if(!$_SESSION['identification'])
+	{
+		unset($_SESSION['identification']);
+		$messageErreurConnexion="La session a expiré";
+		$_SESSION['MetaCampus'] = "connexion";
 	}
 }
 
@@ -16,12 +30,28 @@ else
 
 $menuNavHaut = new Menu("menuNav");
 
-	$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("page1", "Page",False,False));
-	$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("page2", "Page",False,False));
-	$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("page3", "Page",False,False));
-	$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("page4", "Page",False,False));
+//Si il est authentifie //
+if (isset($_SESSION['identification']) && $_SESSION['identification']) 
+{	
+	//Prof
+	if ( $_SESSION['identification']->getProf() == 1 )
+	{
+		$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("page", "Prof",False,False));
+	}
+	else
+	{
+		$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("page", "Eleve",False,False));
+	}
+	$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("connexion", "",False,False));
+}
+else
+{
+	$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("accueil", "Accueil",False,False));
+	$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("BlockChain", "BlockChain",False,False));
+	$menuNavHaut->ajouterComposant($menuNavHaut->creerItemLien("connexion", "",False,False));
+}
 
-$menuNavHaut->creerMenu($_SESSION['AlternaDom'], 'AlternaDom');
+$menuNavHaut->creerMenu($_SESSION['MetaCampus'], 'MetaCampus');
 
 // ####################################################################################################
 // Footer
@@ -29,7 +59,7 @@ $menuNavHaut->creerMenu($_SESSION['AlternaDom'], 'AlternaDom');
 $formFooter = new Formulaire('post', 'index.php', 'fFooter', 'fFooter');
 
 $formFooter->ajouterComposantLigne($formFooter->debutDiv("footerdown"));
-	$formFooter->ajouterComposantLigne($formFooter->creerLabel("", "","© 2020, LAURAIN Yoan (alias Veroz). Tous droits réservés."));
+	$formFooter->ajouterComposantLigne($formFooter->creerLabel("", "","© 2021, METACAMPUS. Tous droits réservés."));
 $formFooter->ajouterComposantLigne($formFooter->finDiv());
 
 $formFooter->ajouterComposantTab();
@@ -37,4 +67,4 @@ $formFooter->creerFormulaire();
 // ####################################################################################################
 
 // Dispatch
-require_once dispatcher::dispatch($_SESSION['AlternaDom']);
+require_once dispatcher::dispatch($_SESSION['MetaCampus']);

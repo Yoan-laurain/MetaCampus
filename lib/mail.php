@@ -22,8 +22,8 @@ class MAIL
         $mail->SMTPSecure = 'ssl'; // Gmail REQUIERT Le transfert securise
         $mail->Host = '	SSL0.OVH.NET';
         $mail->Port = 465;
-        $mail->Username = 'contact@AlternaDom.fr';
-        $mail->Password = 'AlternaDom@nfb78';
+        $mail->Username = 'contact@MetaCampus.fr';
+        $mail->Password = 'MetaCampus@nfb78';
   
         if($attachment['tmp_name']!='')
         {
