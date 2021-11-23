@@ -31,8 +31,7 @@ _   _               _
 	height: 2vw;
 	padding-left: 24px;
 	padding-right: 24px;
-	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-bottom: 24px;
 	position: fixed;
 	top: 0px;
 	z-index: 999999;
@@ -187,7 +186,7 @@ footer label{
 	padding-top:10vw;
 	height:10vw;
 	width:40vw;
-	margin-left:15vw;
+	margin-left:10vw;
 	color:white;
 }
 
@@ -240,7 +239,7 @@ footer label{
 	background-image: url("../images/AccueilBlock1.jpg");
 	background-size: cover;
 	background-repeat: round;
-	background-position: center;
+	height: 57vw;
 }
 
 #AccueilBlock1
@@ -267,11 +266,11 @@ footer label{
 
 #AccueilBlock4 img
 {
-  width:30vw;
-  height:25vw;
-  float: right;
-  margin-right:2vw;
-  margin-top:5vw;
+  width:35vw;
+  height:32.5vw;
+  right:2vw;
+  position :absolute;
+  z-index: 99;
 }
 
 #AccueilBlock3 video{
@@ -291,6 +290,10 @@ footer label{
 	flex-direction: column;
 	height:70vw;
 	color:white;
+	background-image: url("../images/BodyAccueil2.jpg");
+	background-size: cover;
+	background-repeat: round;
+	background-position: center;
 }
 
 #bodyAccueil2 h1, #bodyAccueil3 h1
@@ -314,23 +317,21 @@ footer label{
 
 #First , #Second
 {
-	width : 90vw;
+	width : 100vw;
 	height:40vw;
 	margin:auto;
 	display: flex;
-	background-image: url("../images/BodyAccueil2.jpg");
-	background-size: cover;
-	background-repeat: round;
-	background-position: center;
+
 }
 
 #First-Block1, #First-Block2, #First-Block3, #Second-Block1, #Second-Block2, #Second-Block3
 {
 	width: 30vw;
+	margin-right:2vw;
 }
 
 #First img, #Second img{
-	margin-left:7vw;
+	margin-left:8.5vw;
 	width:15vw;
 }
 
@@ -343,7 +344,7 @@ footer label{
 	height:50vw;
 	background-image: url("../images/BodyAccueil3.jpg");
 	background-size: cover;
-	background-repeat: round;
+	background-repeat: no-repeat;
 	background-position: center;
 	color:white;
 	margin: auto;
