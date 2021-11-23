@@ -10,9 +10,27 @@ class Utilisateur
     private $Jeton;
     private $Sel;
     private $Prof;
+    private $Points;
+    private $Golds;
 
     public function __construct()
     {} 
+
+    public function getPoints(){
+        return $this->Points;
+    }
+
+    public function getGolds(){
+        return $this->Golds;
+    }
+
+    public function setPoints($point){
+        $this->Points = $points;
+    }
+
+    public function setGolds($golds){
+        $this->Golds = $golds;
+    }
 
     public function getJeton()
     {

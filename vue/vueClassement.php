@@ -3,7 +3,7 @@
 </header>
 
 <main class='mainAccueil' id='mainAccueil'>
-	<!-- <?php $accueil->afficherFormulaire(); ?> -->
+	<?php $leaderBoards->afficherFormulaire(); ?>
 </main>
 
 <footer>

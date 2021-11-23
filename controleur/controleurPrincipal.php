@@ -80,7 +80,20 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 
 $menuNavLeft->creerMenu($_SESSION['MetaCampus'], 'MetaCampus');
 
+$menuNavTopCon = new Menu("menuNavTopCon");
 
+if(isset($_SESSION['identification']) && $_SESSION['identification']){
+
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("recherche", "1", false, false));
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("autre", "2", false, false));
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("notifications", "0", false, false));
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("comptes", "", false, false));
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("compte", $_SESSION['identification']->getPrenom()." ".$_SESSION['identification']->getNom(), false, false));
+
+	
+}
+
+$menuNavTopCon->creerMenu($_SESSION['MetaCampus'], 'MetaCampus');
 
 // ####################################################################################################
 // Footer

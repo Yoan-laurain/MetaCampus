@@ -77,6 +77,8 @@ _   _               _
 	background-position-y: 1vw;
 }
 
+/**SideNav left**/
+
 nav#menuNavLeft.menuNavLeft {
     background-color: #271B58;
     display: flex;
@@ -111,6 +113,83 @@ nav#menuNavLeft.menuNavLeft a {
 	color: azure;
 	margin-top: 1vh;
 	text-decoration: none;
+}
+
+
+
+/**navTopCon**/
+
+#menuNavTop{
+	background-color: transparent;
+	width: calc(100% - 48px);
+	height: 2vw;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 24px;
+	position: fixed;
+	top: 0px;
+	z-index: 999999;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-position-x: 1vw;
+	font-size:1vw;
+
+	background-size: 3vw;
+}
+
+#menuNavTopCon {
+	width: fit-content;
+	float: right;
+}
+
+#menuNavTopCon  ul {
+	display: flex;
+	margin-left: 230px;
+}
+#menuNavTopCon li {
+	display: table-cell;
+}
+
+#menuNavTopCon a, #menuNavTopCon span {
+	text-align: center;
+	font-weight: 700;
+	color: white;
+	text-decoration: none;
+	min-width: 40px;
+	min-height: 40px;
+	display: block;
+	margin-right: 1vw;
+	transition: all 0.2s ease-in-out;
+}
+
+#menuNavTopCon #notifications{
+
+	
+	padding-right: 1vW; 
+	
+
+}
+
+#menuNavTopCon #notifications a{
+
+	text-align: center;
+
+	background: linear-gradient(136.67deg, #FF409A 8.34%, #C438EF 95.26%);
+	opacity: 0.8;
+	box-shadow: 0px 4px 31px #BA1358;
+	border-radius: 140px;
+	height: 20px !important;
+	margin-right: 0px !important;
+	
+
+}
+#menuNavTopCon #comptes {
+	background-image: url("../images/Login.png");
+	background-repeat: no-repeat;
+	width:2vw;
+	height: 2vw;
+	background-size: 2vw;
+	background-position-y: 1vw;
 }
 
 
@@ -577,3 +656,17 @@ div.contentConnexion label
 										BLOCKCHAIN
 
 **************************************************************************************************/
+
+/*************************************************************************************************
+
+										LEADER BOARDS
+
+**************************************************************************************************/
+
+#fLeaderBoards{
+	padding-top: 5vh;
+	padding-left: 40vh;
+	color:#ffffff
+
+}
+
