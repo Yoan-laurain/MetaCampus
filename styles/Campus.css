@@ -27,7 +27,7 @@ _   _               _
 #Navigation{
 	background-color: transparent;
 	width: calc(100% - 48px);
-	height: 40px;
+	height: 2vw;
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-top: 12px;
@@ -39,8 +39,9 @@ _   _               _
 	background-repeat: no-repeat;
 	background-position: left;
 	background-position-x: 1vw;
+	font-size:1vw;
 
-	background-size: 4vw;
+	background-size: 3vw;
 }
 
 #menuNav {
@@ -73,7 +74,6 @@ _   _               _
 	width:2vw;
 	height: 2vw;
 	background-size: 2vw;
-	background-position-y: 1vw;;
 }
 
 
@@ -94,13 +94,40 @@ footer .footerdown a {
 
 footer .footerdown {
     padding-top: 1vw;
-    padding-bottom: 1vw;
+    margin-bottom: 2vw;
     text-align: center;
     font-size: 1vw;
     display: flex;
     flex-direction: column;
     height: 4vw;
 	color: white;
+}
+
+#LogoFooterContent
+{
+	display: flex;
+	width:100vw;
+	height: 40vw;
+	margin-bottom:2vw;
+}
+
+#LogoFooter1, #LogoFooter2, #LogoFooter3, #LogoFooter4
+{
+	width:25vw;
+}
+
+#fFooter img{
+	width:8vw;
+	height : 6vw;
+}
+
+#LogoFooter3, #LogoFooter1
+{
+	filter:invert(100%)
+}
+
+footer label{
+	padding-bottom:2vw;
 }
 
 /*****************************************************************************Accueil***************************************************************/
@@ -111,6 +138,10 @@ footer .footerdown {
 	height : 50vw;
 	display: flex;
 	flex-direction: row;
+	background-image: url("../images/TopAccueil.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #TopTexte
@@ -143,9 +174,10 @@ footer .footerdown {
 #bodyAccueil
 {
 	height : 50vw;
+	color : white;
 }
 
-#bouttonAccueil
+#bouttonAccueil, #bouttonAccueilBuy
 {
     font-weight: 900;
     font-size: 1vw;
@@ -157,21 +189,194 @@ footer .footerdown {
     border: none;
     cursor: pointer;
 	width : 15vw;
-	background: linear-gradient(
-	120deg,rgba(255,74,158,0) 0%,#ff3190 0%);
+	background: #000428; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, rgb(149,24,245), rgb(39,27,88)); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, rgb(149,24,245), rgb(39,27,88)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 	box-shadow: 0 12px 24px -6px rgb(255 74 158 / 20%);
 	padding: 12px 32px;
 }
 
-#TopGif
+#bodyAccueil
 {
-	padding-top :2vw;
+	background-image: url("../images/AccueilBlock1.jpg");
+	background-size: cover;
+	background-repeat: round;
+	background-position: center;
 }
 
-#TopGif img{
-	height: 40vw;
-	width:40vw;
+#AccueilBlock1
+{
+	width:max-content;
+	margin: auto;
+	font-weight: bold;
+	letter-spacing: 5px;
+	margin-bottom:2vw;
+	font-size:2vw;
 }
+#AccueilBlock2
+{
+	width:max-content;
+	margin: auto;
+	width:50vw;
+	text-align: center;
+	font-size:1.2vw;
+}
+#AccueilBlock3,#AccueilBlock4
+{
+	width: 50vw;
+}
+
+#AccueilBlock4 img
+{
+  width:30vw;
+  height:25vw;
+  float: right;
+  margin-right:2vw;
+  margin-top:5vw;
+}
+
+#AccueilBlock3 video{
+	width:47vw;
+	margin-left:27vw;
+}
+
+#AccueilBlock3-4
+{
+	display: flex;
+	margin-top: 5vw;
+}
+
+#bodyAccueil2
+{
+	display:flex;
+	flex-direction: column;
+	height:70vw;
+	color:white;
+}
+
+#bodyAccueil2 h1, #bodyAccueil3 h1
+{
+	padding-top:1vw;
+	padding-bottom:1vw;
+	font-size:2vw;
+	width:max-content;
+	margin:auto;
+	letter-spacing: 5px;
+}
+
+#bodyAccueil2 h2, #bodyAccueil3 h2
+{
+	font-size:1vw;
+	width:50vw;
+	margin:auto;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+#First , #Second
+{
+	width : 90vw;
+	height:40vw;
+	margin:auto;
+	display: flex;
+	background-image: url("../images/BodyAccueil2.jpg");
+	background-size: cover;
+	background-repeat: round;
+	background-position: center;
+}
+
+#First-Block1, #First-Block2, #First-Block3, #Second-Block1, #Second-Block2, #Second-Block3
+{
+	width: 30vw;
+}
+
+#First img, #Second img{
+	margin-left:7vw;
+	width:15vw;
+}
+
+#First h2, #Second h2{
+	width:25vw;
+}
+
+#bodyAccueil3
+{
+	height:50vw;
+	background-image: url("../images/BodyAccueil3.jpg");
+	background-size: cover;
+	background-repeat: round;
+	background-position: center;
+	color:white;
+	margin: auto;
+}
+
+#TarifContent
+{
+	display: flex;
+	width:60vw;
+	margin:auto;
+	margin-top:5vw;
+}
+
+#PrixTarifGauche, #PrixTarifDroite
+{
+	height:30vw;
+	width:30vw;
+	background-color:black;
+	border-radius:10px;
+}
+
+#PrixTarifGauche
+{
+	background: #000428; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, rgb(149,24,245), rgb(39,27,88)); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, rgb(149,24,245), rgb(39,27,88)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#PrixTarifGauche h1, #PrixTarifDroite h1
+{
+	font-size : 2vw;
+	font-weight: bold;
+	background: -webkit-linear-gradient(rgb(99, 97, 97),#eee);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#PrixTarifGauche h2,#PrixTarifDroite h2
+{
+	font-size : 3vw;
+	font-weight: bold;
+	width: max-content;
+	margin: auto;
+	margin-bottom:3vw;	
+}
+
+#PurchaseContent{
+	width: max-content;
+	margin-top: 1vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#PurchaseItems h2{
+	background-color: transparent;
+    width: 100%;
+	height:3vw;
+    outline: 0;
+    font-size: 1vw;
+	border-width: 0.2vw;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom:0px;
+	padding-top:1vw;
+	background-image: url("../images//Check.png");
+	background-size: 2vw;
+	background-repeat: no-repeat;
+	background-position-x: 27vw;
+	background-position-y: center;
+}
+
 
 /*************************************************************************************************
 

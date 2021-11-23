@@ -59,7 +59,29 @@ $menuNavHaut->creerMenu($_SESSION['MetaCampus'], 'MetaCampus');
 $formFooter = new Formulaire('post', 'index.php', 'fFooter', 'fFooter');
 
 $formFooter->ajouterComposantLigne($formFooter->debutDiv("footerdown"));
+
+	$formFooter->ajouterComposantLigne($formFooter->debutDiv("LogoFooterContent"));
+
+		$formFooter->ajouterComposantLigne($formFooter->debutDiv("LogoFooter1"));
+			$formFooter->ajouterComposantLigne($formFooter->creerImage("images\Occulus.png"));
+		$formFooter->ajouterComposantLigne($formFooter->finDiv());
+
+		$formFooter->ajouterComposantLigne($formFooter->debutDiv("LogoFooter2"));
+			$formFooter->ajouterComposantLigne($formFooter->creerImage("images\BlockChain.png"));
+		$formFooter->ajouterComposantLigne($formFooter->finDiv());
+
+		$formFooter->ajouterComposantLigne($formFooter->debutDiv("LogoFooter3"));
+			$formFooter->ajouterComposantLigne($formFooter->creerImage("images\OBS.png"));
+		$formFooter->ajouterComposantLigne($formFooter->finDiv());
+
+		$formFooter->ajouterComposantLigne($formFooter->debutDiv("LogoFooter4"));
+			$formFooter->ajouterComposantLigne($formFooter->creerImage("images\Twitch.png"));
+		$formFooter->ajouterComposantLigne($formFooter->finDiv());
+
+	$formFooter->ajouterComposantLigne($formFooter->finDiv());
+
 	$formFooter->ajouterComposantLigne($formFooter->creerLabel("", "","© 2021, METACAMPUS. Tous droits réservés."));
+
 $formFooter->ajouterComposantLigne($formFooter->finDiv());
 
 $formFooter->ajouterComposantTab();

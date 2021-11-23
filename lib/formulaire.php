@@ -205,6 +205,13 @@ class Formulaire{
 		return $composant;
 	}
 
+	public function creerVideo($uneSource){
+		$composant = "<video controls autoplay muted loop>";
+		$composant .= "<source src='" . $uneSource . "'  type='video/mp4' />";
+		$composant .= "</video>";
+		return $composant;
+	}
+ 
 	public function creeCarrousel($uneSource, $unDefautText = "",$i)
 	{
 	   $html ="<li class=carousel-item>";
