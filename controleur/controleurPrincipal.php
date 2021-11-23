@@ -53,6 +53,35 @@ else
 
 $menuNavHaut->creerMenu($_SESSION['MetaCampus'], 'MetaCampus');
 
+// Menu de navigation lattéral
+
+$menuNavLeft = new Menu("menuNavLeft");
+
+if(isset($_SESSION['identification']) && $_SESSION['identification']){
+
+	
+
+	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MetaCampus", "Meta Campus",False,False));
+	
+	if ($_SESSION['identification']->getProf() == 0){
+
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("planning", "Planning",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("cours", "Cours",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("classement", "Classement",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("diplomes", "Diplomes",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("compte", "Mon Compte",False,False));
+
+	}
+
+	
+	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("connexion", "se déconnecter",False,False));
+}
+
+
+$menuNavLeft->creerMenu($_SESSION['MetaCampus'], 'MetaCampus');
+
+
+
 // ####################################################################################################
 // Footer
 
