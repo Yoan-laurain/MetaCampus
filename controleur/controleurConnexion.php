@@ -22,8 +22,17 @@ if (isset($_POST['submitConnex']))
 		{
 			setcookie('jeton',$var,time()+365*24*3600,null,null,false,true);
 		}
-		header('location: index.php?MetaCampus=Accueil'); 
-		exit;
+
+		if( $_SESSION['identification']->getProf() == 1 )
+		{
+			header('location: index.php?MetaCampus=Accueil'); 
+			exit;
+		}
+		else
+		{
+			header('location: index.php?MetaCampus=AccueilEleves'); 
+			exit;
+		}
 	}
 	else 
 	{

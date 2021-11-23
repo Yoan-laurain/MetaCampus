@@ -84,9 +84,9 @@ $menuNavTopCon = new Menu("menuNavTopCon");
 
 if(isset($_SESSION['identification']) && $_SESSION['identification']){
 
-	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("recherche", "1", false, false));
-	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("autre", "2", false, false));
-	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("notifications", "0", false, false));
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("recherche", "", false, false));
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("autre", "", false, false));
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("notifications", "", false, false));
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("comptes", "", false, false));
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("compte", $_SESSION['identification']->getPrenom()." ".$_SESSION['identification']->getNom(), false, false));
 

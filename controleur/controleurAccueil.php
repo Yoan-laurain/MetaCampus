@@ -74,35 +74,6 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil2"));
 
     $accueil->ajouterComposantLigne($accueil->finDiv());
 
-   // $accueil->ajouterComposantLigne($accueil->debutDiv("Second"));
-
-     //   $accueil->ajouterComposantLigne($accueil->debutDiv("Second-Block1"));
-
-       //     $accueil->ajouterComposantLigne($accueil->creerImage("images\Planning.png"));
-       //     $accueil->ajouterComposantLigne($accueil->creerTitre("Defiez vos camarades ",1,"Titre"));
-       //     $accueil->ajouterComposantLigne($accueil->creerTitre("Ouh les copains je ne vous oublierai jamais c'est faux",2,"SousTitre"));
-
-      //  $accueil->ajouterComposantLigne($accueil->finDiv());
-
-      //  $accueil->ajouterComposantLigne($accueil->debutDiv("Second-Block2"));
-
-        //    $accueil->ajouterComposantLigne($accueil->creerImage("images\Planning.png"));
-        //    $accueil->ajouterComposantLigne($accueil->creerTitre("Defiez vos camarades ",1,"Titre"));
-        //    $accueil->ajouterComposantLigne($accueil->creerTitre("Ouh les copains je ne vous oublierai jamais c'est faux",2,"SousTitre"));
-
-     //   $accueil->ajouterComposantLigne($accueil->finDiv());
-
-//        $accueil->ajouterComposantLigne($accueil->debutDiv("Second-Block3"));
-
-  //          $accueil->ajouterComposantLigne($accueil->creerImage("images\Planning.png"));
-    //        $accueil->ajouterComposantLigne($accueil->creerTitre("Defiez vos camarades ",1,"Titre"));
-     //       $accueil->ajouterComposantLigne($accueil->creerTitre("Ouh les copains je ne vous oublierai jamais c'est faux",2,"SousTitre"));
-
-     //   $accueil->ajouterComposantLigne($accueil->finDiv());
-
-    // $accueil->ajouterComposantLigne($accueil->finDiv());
-
-
 $accueil->ajouterComposantLigne($accueil->finDiv());
 
 $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil3"));

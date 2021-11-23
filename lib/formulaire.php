@@ -68,6 +68,12 @@ class Formulaire{
 
 
 	// ##################################################################################################################
+	public function toggleSwitch()
+	{
+		$composant = " <label class='switch'> <input type='checkbox'> <span class='slider round'></span> </label>";
+		return $composant;
+	}
+
 	public function creerLabel($unNom, $unId, $unLabel){
 		$composant = "<label name ='" . $unNom . "' id ='" . $unId . "'>" . $unLabel . "</label>";
 		return $composant;
