@@ -12,6 +12,7 @@ main {
     width: 100%;
     min-height: 50vw;
     margin: auto;
+	background-color: #2A2C31;
 }
 
 
@@ -74,6 +75,43 @@ _   _               _
 	width:2vw;
 	height: 2vw;
 	background-size: 2vw;
+	background-position-y: 1vw;
+}
+
+nav#menuNavLeft.menuNavLeft {
+    background-color: #271B58;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+	padding-right: 10vh;
+	padding-left: 8vh;
+	text-decoration : none;
+}
+
+nav#menuNavLeft.menuNavLeft li {
+	color: azure;
+	list-style: none;
+	padding-top: 5vh;
+}
+
+nav#menuNavLeft.menuNavLeft li#MetaCampus{
+	font-weight: bold;
+	padding-bottom: 10vh;
+	font-size: 20;
+}
+
+nav#menuNavLeft.menuNavLeft li#connexion{
+	
+	padding-top: 40vh;
+}
+
+
+nav#menuNavLeft.menuNavLeft a {
+	color: azure;
+	margin-top: 1vh;
+	text-decoration: none;
 }
 
 
