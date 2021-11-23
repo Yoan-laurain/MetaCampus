@@ -231,6 +231,14 @@ class Formulaire{
 	
 	
 	// ##################################################################################################################
+
+	public function creerResearch()
+	{
+		$composant = "<div class='search-box'> <button class='btn-search'><i class='fa fa-search'></i></button>";
+		$composant.= "<input type='text' class='input-search' placeholder='Type to Search...'></div>";
+		return $composant;
+	}
+
 	public function creerInputTexte($unNom, $unId, $uneValue , $required , $placeholder , $pattern){
 		$composant = "<input type = 'text' name = '" . $unNom . "' id = '" . $unId . "' ";
 		if (!empty($uneValue)){

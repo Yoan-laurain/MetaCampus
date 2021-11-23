@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 session_start();
 ?>
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" style="overflow-x: hidden;">
 	<head>
 		<meta charset="utf-8" />
 		<title>Campus 3.0</title>
@@ -29,6 +29,8 @@ session_start();
 				})
 			})
 		</script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	</body>
 </html>

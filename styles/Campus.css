@@ -13,6 +13,7 @@ main {
     min-height: 50vw;
     margin: auto;
 	background-color: #2A2C31;
+	overflow-x: hidden;
 }
 
 
@@ -27,11 +28,11 @@ _   _               _
 ****************************************************/
 #Navigation{
 	background-color: transparent;
-	width: calc(100% - 48px);
+	width: 100%;
 	height: 2vw;
 	padding-left: 24px;
 	padding-right: 24px;
-	padding-bottom: 24px;
+	padding-bottom: 4vw;
 	position: fixed;
 	top: 0px;
 	z-index: 999999;
@@ -127,6 +128,11 @@ ______          _
 
 footer .footerdown a {
 	text-decoration: none;
+}
+
+form#fFooter.fFooter
+{
+	background-color: black;
 }
 
 footer .footerdown {
@@ -251,10 +257,15 @@ footer label{
 	margin-bottom:2vw;
 	font-size:2vw;
 }
+#AccueilBlock1 h1
+{
+	margin:0px;
+}
 #AccueilBlock2
 {
 	width:max-content;
 	margin: auto;
+	margin-top:4vw;
 	width:50vw;
 	text-align: center;
 	font-size:1.2vw;
@@ -267,7 +278,7 @@ footer label{
 #AccueilBlock4 img
 {
   width:35vw;
-  height:32.5vw;
+  height:30.8vw;
   right:2vw;
   position :absolute;
   z-index: 99;
@@ -422,16 +433,23 @@ footer label{
 										CONNEXION
 
 **************************************************************************************************/
-
+#mainConnexion
+{
+	background-image: url("../images/BgConnexion.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height:60vw;
+	padding-top:7vw;
+}
 
 div.contentConnexion
 {
 	width:50%;
-	margin-left:28vw;
+	margin-left:25.5vw;
 	text-align:center;
 	height:30vw;
 	align-items: center;
-	padding-top: 10vw;
 }
 
 div.connexion
@@ -448,23 +466,26 @@ div.connexion
 .contentConnexion #GaucheConnexion 
 {
 	width : 50%;
-	height:31vw;
+	height:inherit;
 	background-image: url("../images/Connexion.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	border-radius: 10px;
 }
 
 .contentConnexion #DroiteConnexion 
 {
 	width : 50%;
 	background-color: white;
+	border-radius: 10px;
 }
 
 .contentConnexion #MidConnexion
 {
 	display: flex;
 	flex-direction: row;
+	margin-top:6vw;
 }
 
 .contentConnexion #DroiteConnexion h1
@@ -577,3 +598,117 @@ div.contentConnexion label
 										BLOCKCHAIN
 
 **************************************************************************************************/
+
+#BlockChainContent
+{
+	background-image: url("../images/BgBlockChain.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 50vw;
+	padding-top:5vw;
+	display: flex;
+}
+
+#SearchContent
+{
+	width :max-content;
+}
+
+div.search-box
+{
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.search-box{
+	width: fit-content;
+	height: fit-content;
+	position: relative;
+  }
+  .input-search{
+	height: 50px;
+	width: 50px;
+	border-style: none;
+	padding: 10px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	outline: none;
+	border-radius: 25px;
+	transition: all .5s ease-in-out;
+	background-color: #22a6b3;
+	padding-right: 40px;
+	color:#fff;
+  }
+  .input-search::placeholder{
+	color:rgba(255,255,255,.5);
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: 100;
+  }
+  .btn-search{
+	width: 50px;
+	height: 50px;
+	border-style: none;
+	font-size: 20px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	border-radius: 50%;
+	position: absolute;
+	right: 0px;
+	color:#ffffff ;
+	background-color:transparent;
+	pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+	width: 300px;
+	border-radius: 0px;
+	background-color: transparent;
+	border-bottom:1px solid rgba(255,255,255,.5);
+	transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+.input-search:focus{
+	width: 300px;
+	border-radius: 0px;
+	background-color: transparent;
+	border-bottom:1px solid rgba(255,255,255,.5);
+	transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+#topBlockChain, #SearchContent
+{
+	width:50vw;
+	color:white;
+	margin-top:6vw;
+}
+
+#topBlockChain
+{
+	margin-left:2vw;
+}
+
+#topBlockChain h1
+{
+	width: max-content;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 3vw;
+	font-weight: bold;
+	margin-bottom:3vw;
+}
+#topBlockChain h2
+{
+	width:40vw;
+	text-align: center;
+	margin-right:auto;
+	margin-left:auto;
+}
+#DiplomesContent 
+{
+	width:max-content;
+	margin:auto;
+}
+
+
+  
