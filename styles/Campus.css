@@ -194,10 +194,7 @@ nav#menuNavLeft.menuNavLeft a:hover{
 	display: block;
 	margin-right: 1vw;
 	transition: all 0.2s ease-in-out;
-}
-
-#menuNavTopCon #notifications{
-	padding-right: 1vW; 
+	padding-bottom: 1vw;
 }
 
 #menuNavTopCon #notifications a{
@@ -210,19 +207,14 @@ nav#menuNavLeft.menuNavLeft a:hover{
 	margin-right: 1vw !important;
 }
 
-#menuNavTopCon #comptes {
-	background-image: url("../images/Login.png");
-	background-repeat: no-repeat;
-	width:2vw;
-	height: 2vw;
-	background-size: 2vw;
-	background-position-y: 1vw;
-}
-#menuNavTopCon #recherche,#menuNavTopCon #autre,#menuNavTopCon #notifications
+#menuNavTopCon #recherche,#menuNavTopCon #autre,#menuNavTopCon #comptes, #menuNavTopCon #notifications
 {
 	background-repeat: no-repeat;
 	background-size: 2vw;
 	background-position-y: center;
+}
+#menuNavTopCon  #comptes {
+	background-image: url("../images/Login.png");
 }
 #menuNavTopCon #recherche
 {
