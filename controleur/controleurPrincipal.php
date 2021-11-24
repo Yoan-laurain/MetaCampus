@@ -9,6 +9,7 @@ else
 {
 	if(!isset($_SESSION['MetaCampus'])){
 		$_SESSION['MetaCampus'] = "accueil";
+		
 	}
 }
 
@@ -88,7 +89,7 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("autre", "", false, false));
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("notifications", "", false, false));
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("comptes", "", false, false));
-	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("MonCompte", $_SESSION['identification']->getPrenom()." ".$_SESSION['identification']->getNom(), false, false));
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("MonCompte", ucfirst($_SESSION['identification']->getPrenom())." ".ucfirst($_SESSION['identification']->getNom()), false, false));
 
 	
 }
