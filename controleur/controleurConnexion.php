@@ -25,7 +25,7 @@ if (isset($_POST['submitConnex']))
 
 		if( $_SESSION['identification']->getProf() == 1 )
 		{
-			header('location: index.php?MetaCampus=Accueil'); 
+			header('location: index.php?MetaCampus=AccueilProf'); 
 			exit;
 		}
 		else

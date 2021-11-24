@@ -126,6 +126,11 @@ class Formulaire{
 		$composant .= "<span class=carousel-control-next-icon aria-hidden=true></span><span class=sr-only>Next</span></a>";
 		return $composant;
 	}
+
+	public function creerTroisPetitsPoints($unId){
+		$composant="<a id='". $unId."' ...";
+		return $composant;
+	}
 	// ##################################################################################################################
 	
 
