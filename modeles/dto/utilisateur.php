@@ -12,12 +12,30 @@ class Utilisateur
     private $Prof;
     private $Points;
     private $Golds;
+    private $Telephone;
+    private $Pseudo;
 
     public function __construct()
     {} 
 
     public function getPoints(){
         return $this->Points;
+    }
+
+    public function getTelephone(){
+        return $this->Telephone;
+    }
+
+    public function setTelephone($Telephone){
+        $this->Telephone = $Telephone;
+    }
+
+    public function getPseudo(){
+        return $this->Pseudo;
+    }
+
+    public function setPseudo($Pseudo){
+        $this->Pseudo = $Pseudo;
     }
 
     public function getGolds(){

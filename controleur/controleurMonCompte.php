@@ -17,14 +17,14 @@ $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("BodyMonCompte"));
         $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInfo"));
 
             $MonCompte->ajouterComposantLigne($MonCompte->creerTitre("Pseudo :",1,"Titre"));
-            $MonCompte->ajouterComposantLigne($MonCompte->creerInputTexte("InputPseudo", "InputPseudo", "" , 1,"",""));
+            $MonCompte->ajouterComposantLigne($MonCompte->creerInputTexte("InputPseudo", "InputPseudo", (isset($_SESSION['identification']) ? $_SESSION['identification']->getPseudo(): ""), 1,"",""));
 
             $MonCompte->ajouterComposantLigne($MonCompte->creerTitre("Email :",1,"Titre"));
-            $MonCompte->ajouterComposantLigne($MonCompte->creerInputTexte("InputEmail", "InputEmail", "" , 1,"",""));
+            $MonCompte->ajouterComposantLigne($MonCompte->creerInputTexte("InputEmail", "InputEmail", (isset($_SESSION['identification']) ? $_SESSION['identification']->getMail():"") , 1,"",""));
 
 
             $MonCompte->ajouterComposantLigne($MonCompte->creerTitre("Téléphone :",1,"Titre"));
-            $MonCompte->ajouterComposantLigne($MonCompte->creerInputTexte("InputTel", "InputTel", "" , 1,"",""));
+            $MonCompte->ajouterComposantLigne($MonCompte->creerInputTexte("InputTel", "InputTel",(isset($_SESSION['identification']) ?  $_SESSION['identification']->getTelephone() :"") , 1,"",""));
 
         $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
@@ -35,19 +35,19 @@ $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("BodyMonCompte"));
             $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteCaraStage1"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerTitre("Niveau :",1,"Titre"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerLabel("InputLvl", "InputLvl","98"));
-                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Star.png"));
+                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Star2.png"));
             $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
             $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteCaraStage2"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerTitre("Méta Coins :",1,"Titre"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerLabel("InputLvl", "InputLvl","45"));
-                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Coin.png"));
+                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Coin2.png"));
             $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
             $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteCaraStage3"));
             $MonCompte->ajouterComposantLigne($MonCompte->creerTitre("Méta Points :",1,"Titre"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerLabel("InputLvl", "InputLvl","7828"));
-                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Fever.png"));
+                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Fever2.png"));
             $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
         $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
@@ -60,8 +60,16 @@ $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("BodyMonCompte"));
 
         $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireContent"));
 
-            $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireTab"));
+            $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireTabFull"));
+                $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireTab"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Wallet.png"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Hat.png"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\SkateBoard.png"));
+                $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
+                $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireTab2"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Sword.png"));
+                $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
             $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
             $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireBouton"));
@@ -81,7 +89,6 @@ $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("BodyMonCompte"));
         $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
     $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
-
 
 $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 

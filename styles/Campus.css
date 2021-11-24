@@ -197,16 +197,6 @@ nav#menuNavLeft.menuNavLeft a:hover{
 	padding-bottom: 1vw;
 }
 
-#menuNavTopCon #notifications a{
-	margin-top:1vw;
-	background: linear-gradient(136.67deg, #FF409A 8.34%, #C438EF 95.26%);
-	opacity: 0.8;
-	box-shadow: 0px 4px 31px #BA1358;
-	border-radius: 140px;
-	height: 20px !important;
-	margin-right: 1vw !important;
-}
-
 #menuNavTopCon #recherche,#menuNavTopCon #autre,#menuNavTopCon #comptes, #menuNavTopCon #notifications
 {
 	background-repeat: no-repeat;
@@ -228,7 +218,6 @@ nav#menuNavLeft.menuNavLeft a:hover{
 
 #menuNavTopCon #notifications
 {
-	background-size: 1vw;
 	background-image: url("../images/Notif.png");
 }
 
@@ -1265,8 +1254,7 @@ div.search-box
 {
 	transform: translateY(-10px);
 }
-
-#MonCompteInventaireTab
+#MonCompteInventaireTabFull
 {
 	height:10vw;
 	width:50vw;
@@ -1276,12 +1264,30 @@ div.search-box
 	cursor: pointer;
 	transition: transform 250ms;
 	display: flex;
-	flex-direction: column;
 	border: solid;
 	border-color: rgb(208, 197, 223);
 	border-radius:5px;
 	color:white;
 	text-align: center;
+	flex-direction: column;
+}
+
+#MonCompteInventaireTab,#MonCompteInventaireTab2
+{
+	height:5vw;
+	width:50vw;
+
+	display: flex;
+}
+#MonCompteInventaireTab img:hover,#MonCompteInventaireTab2 img:hover
+{
+	transform: translateY(-10px);
+}
+#MonCompteInventaireTab img, #MonCompteInventaireTab2 img
+{
+	width: 4vw;
+    height: 4vw;
+    margin-left: 2vw;
 }
 
 #MonCompteInventaire

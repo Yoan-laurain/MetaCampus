@@ -6,6 +6,3 @@
 	<?php $accueilEleves->afficherFormulaire(); ?>
 </main>
 
-<footer>
-	<?php include 'vue\bas.php' ;?>
-</footer>

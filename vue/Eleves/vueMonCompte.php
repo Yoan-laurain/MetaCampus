@@ -6,6 +6,3 @@
 	<?php $MonCompte->afficherFormulaire(); ?>
 </main>
 
-<footer>
-	<?php include 'vue\bas.php' ;?>
-</footer>

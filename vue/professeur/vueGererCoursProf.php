@@ -6,6 +6,3 @@
     <?php $EnCoursDev->afficherFormulaire(); ?>
 </main>
 
-<footer>
-    <?php include 'vue\bas.php'; ?>
-</footer>
