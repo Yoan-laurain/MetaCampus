@@ -1344,3 +1344,110 @@ div.search-box
 	height:2vw;
 	margin: auto;
 }
+
+#coursEleve
+{
+	width:80vw;
+	margin-left:20vw;
+	color:white;
+}
+
+#coursEleveTitre{
+	font-size:1.8vw;
+	margin-top:2vw;
+	font-weight: bold;
+	width:max-content;
+	color:white;
+	margin-left:1vw;
+}
+
+#DivListe{
+	margin-left:3vw;
+	height:30vw;
+	width:40vw;
+	display: flex;
+}
+
+
+#SubTitle{
+	margin-top:5vw;
+	width: 40vw;
+}
+
+#CoursBlockOptionel{
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+
+	height:6vw;
+	width:40vw;
+	background-color: rgb(84,41,146);
+	margin-bottom:2vw;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#CoursBlockOptionelStage0{
+	display: flex;
+	flex-direction: row;
+	margin-top: 1vw;
+	margin-bottom:1vw;
+	margin-left: 1vw;
+	margin-right: 1vw;
+
+	width : 7vw;
+	height:3vw;
+
+	cursor: pointer;
+	transition: transform 250ms;
+
+	background-color: #271B58;
+	border-radius:15px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#CoursBlockOptionelStage3{
+	display: flex;
+	flex-direction: row;
+	margin-top: 1vw;
+	margin-bottom:1vw;
+	margin-left: 1vw;
+	margin-right: 2vw;
+
+	width : 3.5vw;
+	height:2.5vw;
+
+	cursor: pointer;
+	transition: transform 250ms;
+
+	border-radius:70px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	background-color : #5E68ED;
+}
+
+#CoursBlockOptionelStage0 img,#CoursBlockOptionelStage3 img
+{
+	width:2vw;
+	height:2vw;
+	justify-content: center;
+	margin: auto;
+}
+
+#CoursBlockOptionelStage1{
+	width:95%;
+	display: flex;
+	flex-direction: row;
+}
+
+#NomMatiere{
+	margin:auto;
+}
+
+#CoursBlockOptionelStage2{
+	width: max-content;
+	margin-top:0.7vw;
+	margin-bottom:0.7vw;
+	margin-left:auto;
+	margin-right:auto;
+}
