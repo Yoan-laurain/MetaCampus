@@ -65,11 +65,11 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 	
 	if ($_SESSION['identification']->getProf() == 0){
 
-		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("planning", "Planning",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("AccueilEleves", "Planning",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("cours", "Cours",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("classement", "Classement",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("diplomes", "Diplomes",False,False));
-		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("compte", "Mon Compte",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MonCompte", "Mon Compte",False,False));
 
 	}
 
@@ -88,7 +88,7 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("autre", "", false, false));
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("notifications", "", false, false));
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("comptes", "", false, false));
-	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("compte", $_SESSION['identification']->getPrenom()." ".$_SESSION['identification']->getNom(), false, false));
+	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("MonCompte", $_SESSION['identification']->getPrenom()." ".$_SESSION['identification']->getNom(), false, false));
 
 	
 }
