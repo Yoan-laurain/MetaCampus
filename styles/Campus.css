@@ -886,6 +886,50 @@ div.search-box
 	font-size:1.5vw;
 }
 
+
+/*************************************************************************************************
+
+										Accueil Eleves
+
+**************************************************************************************************/
+
+#BodyAccueilProf
+{
+	width:80vw;
+	margin-left:20vw;
+	color:white;
+}
+
+#ContentAccueilProfTitre
+{
+	font-size:1.8vw;
+	margin-top:2vw;
+	font-weight: bold;
+	width:max-content;
+	color:white;
+}
+
+#ContentAccueilProfCours
+{
+	margin-left:3vw;
+	height:30vw;
+	width:40vw;
+	display: flex;
+}
+#ContentAccueilProfCoursGauche
+{
+	margin-top:5vw;
+	width: 40vw;
+}
+#ContentAccueilProfCoursDroite
+{
+	width:30vw;
+}
+#ContentAccueilProfCours h1
+{
+	font-size:1.5vw;
+}
+
 #NotificationsBlock
 {
 	margin-top:2vw;
@@ -932,6 +976,20 @@ div.search-box
 .switch, #ProfCours
 {
 	float: right;
+}
+
+#EnCoursDevContent{
+	color: white;
+	margin:auto;
+	font-size:3vw;
+	width:max-content;
+}
+
+#fEnCoursDev
+{
+	width: max-content;
+	margin: auto;
+	margin-top:20vw;
 }
 
 #CoursBlockStage1,#CoursBlockStage3
