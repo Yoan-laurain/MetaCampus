@@ -6,7 +6,7 @@ $BlockChain->ajouterComposantLigne($BlockChain->debutDiv("BlockChainContent"));
 
     $BlockChain->ajouterComposantLigne($BlockChain->debutDiv("topBlockChain"));
 
-        $BlockChain->ajouterComposantLigne($BlockChain->creerTitre("Diplômes dans la blockChain",1,"Titre"));
+        $BlockChain->ajouterComposantLigne($BlockChain->creerTitre("Diplômes dans la Blockchain",1,"Titre"));
         $BlockChain->ajouterComposantLigne($BlockChain->creerTitre("La blockchain permet d'enregistrer et de sécuriser les diplômes et les bulletins de nos étudiants. Grâce à celle-ci la falsification devient impossible!",2,"SousTitre"));
 
     $BlockChain->ajouterComposantLigne($BlockChain->finDiv());
