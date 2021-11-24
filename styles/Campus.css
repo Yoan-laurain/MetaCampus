@@ -198,12 +198,13 @@ nav#menuNavLeft.menuNavLeft a:hover{
 }
 
 #menuNavTopCon #notifications a{
+
 	margin-top:1vw;
 	background: linear-gradient(136.67deg, #FF409A 8.34%, #C438EF 95.26%);
 	opacity: 0.8;
 	box-shadow: 0px 4px 31px #BA1358;
 	border-radius: 140px;
-	height: 20px !important;
+	height: 2px !important;
 	margin-right: 1vw !important;
 }
 
@@ -837,11 +838,55 @@ div.search-box
 **************************************************************************************************/
 
 #fLeaderBoards{
-	padding-top: 5vh;
-	padding-left: 40vh;
-	color:#ffffff
+	padding-top: 1vh;
+	padding-left: 43vh;
+	color:#ffffff;
+}
+
+
+#fLeaderBoards #TopTitle{
+	margin-bottom: 5vh;
+}
+
+#fLeaderBoards #eleve{
+	margin-left:2vh;
+	margin-right: 62vh;
 
 }
+
+#fLeaderBoards table td{
+	text-align: center;
+	border: #fff;
+	border-top: solid 1px;
+	
+	border-spacing: 2px;
+	padding-left: 7vh;
+	padding-right: 7vh;
+	
+}
+
+#fLeaderBoards table{
+	
+	border-collapse: collapse;
+}
+
+#fLeaderBoards #tabs{
+	display: flex;
+	
+}
+
+#fLeaderBoards #leftTabLB{
+	background: #542992;
+	border-radius: 10px;
+	margin-right: 2vh;
+}
+
+#fLeaderBoards #rightTabLB{
+	background: #542992;
+	border-radius: 10px;
+}
+
+
 
 /*************************************************************************************************
 
