@@ -63,7 +63,7 @@ $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("BodyAccueilEleve
 
                 $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage3"));
                     $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "16H"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mme abury"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mme Abury"));
                 $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
             $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());

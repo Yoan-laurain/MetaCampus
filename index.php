@@ -7,7 +7,7 @@ session_start();
 <html lang="fr" style="overflow-x: hidden;">
 	<head>
 		<meta charset="utf-8" />
-		<title>Campus 3.0</title>
+		<title>Meta Campus</title> <!-- Changer pour Meta Campus -->
 		<style type="text/css">
 			@import url(styles/Campus.css);
 		</style>
