@@ -268,6 +268,24 @@ class Formulaire{
 		return $composant;
 	}
 
+	public function creerInputTexteDisabled($unNom, $unId, $uneValue , $required , $placeholder , $pattern){
+		$composant = "<input type = 'text' name = '" . $unNom . "' id = '" . $unId . "' ";
+		if (!empty($uneValue)){
+			$composant .= "value = '" . $uneValue . "' ";
+		}
+		if (!empty($placeholder)){
+			$composant .= "placeholder = '" . $placeholder . "' ";
+		}
+		if ($required == 1){
+			$composant .= "required ";
+		}
+		if (!empty($pattern)){
+			$composant .= "pattern = '" . $pattern . "' ";
+		}
+		$composant .= "disabled/>";
+		return $composant;
+	}
+
 	public function creerInputGrandTexte($unNom, $unId, $uneValue , $required , $placeholder , $pattern){
 		$composant = "<TEXTAREA rows=10 name = '" . $unNom . "' id = '" . $unId . "' ";
 		if (!empty($uneValue)){
@@ -368,6 +386,18 @@ class Formulaire{
 		$composant .= "/> ";
 		return $composant;
 	}
+
+	public function creerInputButton($unNom, $unId, $uneValue, $onClick = ""){
+		$composant = "<input type = 'button' name = '" . $unNom . "' id = '" . $unId . "' ";
+		$composant .= "value = \"" . $uneValue . "\"";
+		if ($onClick != "") {
+			$composant .= " onclick='" . $onClick . "'";
+		}
+		
+		$composant .= "/> ";
+		return $composant;
+	}
+
 	public function creerInputSubmit2($Class,$unNom, $unId, $uneValue, $onClick = ""){
 		$composant = "<input class =".$Class." type = 'submit' name = '" . $unNom . "' id = '" . $unId . "' ";
 		$composant .= "value = \"" . $uneValue . "\"";

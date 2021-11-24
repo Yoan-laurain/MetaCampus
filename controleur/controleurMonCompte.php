@@ -41,13 +41,13 @@ $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("BodyMonCompte"));
             $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteCaraStage2"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerTitre("Méta Coins :",1,"Titre"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerLabel("InputLvl", "InputLvl","45"));
-                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Coin.png"));
+                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\icon_piece.png"));
             $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
             $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteCaraStage3"));
             $MonCompte->ajouterComposantLigne($MonCompte->creerTitre("Méta Points :",1,"Titre"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerLabel("InputLvl", "InputLvl","7828"));
-                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Fever.png"));
+                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\icon_pioche.png"));
             $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
         $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
@@ -68,7 +68,8 @@ $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("BodyMonCompte"));
 
                 $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireBoutonAchat"));
                     $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Wallet.png"));
-                    $MonCompte->ajouterComposantLigne($MonCompte->creerInputSubmit("AchatInventaire", "AchatInventaire", "Bourse et Boutique", ""));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerLabelLink("AchatInventaire", "AchatInventaire","index.php?MetaCampus=Boutique", "Bourse et Boutique","",""));
+    
                 $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
                 $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireBoutonVente"));
