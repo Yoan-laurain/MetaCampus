@@ -12,4 +12,4 @@ $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("topListeCour
 
 $ListeCoursEleve->ajouterComposantTab();
 $ListeCoursEleve->creerFormulaire();
-require_once 'vue/vueListeCoursEleve.php';
+require_once 'vue/Eleves/vueCours.php';

@@ -66,7 +66,7 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 	if ($_SESSION['identification']->getProf() == 0){
 
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("planning", "Planning",False,False));
-		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("ListeCoursEleve", "Cours",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("cours", "Cours",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("classement", "Classement",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("diplomes", "Diplomes",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("compte", "Mon Compte",False,False));
