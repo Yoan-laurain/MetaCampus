@@ -435,5 +435,55 @@ class Formulaire{
 
 		return $composant;
 	}
+
+	public function creerTableUtilisateurE(){
+		$composant = "<table class='tabUser'><thead>";
+
+		// Creer le head avec la premier ligne de la liste
+		$composant .= "<tr><th>#</th><th>Nom</th><th>Points</th>";
+			
+		$composant .= "</tr></thead><tbody>";		
+			$composant.="<tr>";
+			$composant.="<td>" . "1er" . "</td>";
+			$composant.= "<td>" . "Jean" ." ". "SARC" . "</td>";
+			$composant.="<td>" . "7900" . "</td>";
+			
+			
+			$composant.="</tr>";
+
+			$composant.="<tr>";
+			$composant.="<td>" . "2ème" . "</td>";
+			$composant.= "<td>" . "Simon" ." ". "MORIN" . "</td>";
+			$composant.="<td>" . "7828" . "</td>";
+			
+			
+			$composant.="</tr>";
+		
+
+
+		$composant .= "</tbody></table>";
+		return $composant;
+	}
+
+	public function creerTableUtilisateurP(){
+		$composant = "<table class='tabUser'><thead>";
+
+		// Creer le head avec la premier ligne de la liste
+		$composant .= "<tr><th>#</th><th>Nom</th><th>Votes</th>";
+			
+		$composant .= "</tr></thead><tbody>";		
+			$composant.="<tr>";
+			$composant.="<td>" . "1er" . "</td>";
+			$composant.= "<td>" . "Matthieu" ." ". "Pichon" . "</td>";
+			$composant.="<td>" . "50" . "</td>";
+			
+			
+			$composant.="</tr>";
+		
+
+
+		$composant .= "</tbody></table>";
+		return $composant;
+	}
 	// ##################################################################################################################	
 }
