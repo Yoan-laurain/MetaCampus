@@ -7,7 +7,7 @@
 
 
 	<nav class="menuNavLeft" id="menuNavLeft">
-
+		<div class="menu_logo" id="menu_logo" onclick="toggle_menu(this)"> </div>
 		<?php $menuNavLeft->afficherMenu();?>
 
 	</nav>

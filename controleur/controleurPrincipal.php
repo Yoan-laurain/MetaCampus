@@ -56,12 +56,11 @@ $menuNavHaut->creerMenu($_SESSION['MetaCampus'], 'MetaCampus');
 
 // Menu de navigation latéral 
 
-$menuNavLeft = new Menu("menuNavLeft");
+$menuNavLeft = new Menu("menuNavLeftCon");
 
 if(isset($_SESSION['identification']) && $_SESSION['identification']){
 
 	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MetaCampus", "Meta Campus",False,False));
-	
 	if ($_SESSION['identification']->getProf() == 0){
 
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("AccueilEleves", "Planning",False,False));
@@ -70,8 +69,11 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("Duels", "Duels",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("suiviescolaire", "SuivieScolaire",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MonCompte", "Mon Compte",False,False));
+	}else{
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("AccueilProf", "Planning",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("classement", "Classement",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MonCompte", "Mon Compte",False,False));
 	}
-
 	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("connexion", "Se Déconnecter",False,False));
 }
 

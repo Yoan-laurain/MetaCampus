@@ -41,8 +41,15 @@ _   _               _
 	background-position: left;
 	background-position-x: 1vw;
 	font-size:1vw;
-	background-size: 5vw;
+	transition: 0.3s;
+	background-size: 3vw;
 }
+
+#Navigation.active
+{
+	background-color: rgb(149,24,245);
+}
+
 
 #menuNav {
 	width: fit-content;
@@ -82,13 +89,54 @@ _   _               _
 nav#menuNavLeft.menuNavLeft {
     background-color: #271B58;
     display: flex;
-    position: fixed;
+    position: absolute;
+    top: 0px;
+	width: 360px;
+    left: -360px;
+    height: 100vh;
+	padding-right: 10vh;
+	padding-left: 8vh;
+	text-decoration : none;
+	transition: 1s;
+}
+
+nav#menuNavLeft.menuNavLeft.toggle {
+    background-color: #271B58;
+    display: flex;
+    position: absolute;
     top: 0px;
     left: 0px;
     height: 100vh;
 	padding-right: 10vh;
 	padding-left: 8vh;
 	text-decoration : none;
+}
+
+nav#menuNavLeft .menu_logo.toggle {
+    background-image: url('../images/Fever2.png');
+	background-size: cover;
+  	background-position: center;
+	background-repeat: no-repeat;
+	left: 80%;
+	cursor: pointer;
+	transition: 1s;
+}
+
+nav#menuNavLeft .menu_logo {
+	background-image: url('../images/Sword.png');
+	background-size: cover;
+  	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 999999;
+	left: 100%;
+    display: flex;
+    position: absolute;
+	width: 35px;
+	height: 35px;
+	margin: 10px;
+	top: 0;
+	cursor: pointer;
+	transition: 1s;
 }
 
 nav#menuNavLeft.menuNavLeft li {
@@ -98,14 +146,14 @@ nav#menuNavLeft.menuNavLeft li {
 }
 
 
-nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion,nav#menuNavLeft.menuNavLeft li#suiviescolaire
+nav#menuNavLeft.menuNavLeft li#AccueilEleves,li#AccueilProf,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion,nav#menuNavLeft.menuNavLeft li#suiviescolaire
 {
 	background-repeat: no-repeat;
 	background-size: 1.5vw;
 	background-position: left;
 	background-position-y: center;
 }
-nav#menuNavLeft.menuNavLeft li#AccueilEleves
+nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#AccueilProf
 {
 	background-image: url("../images/Calendar.png");
 }
@@ -148,7 +196,7 @@ nav#menuNavLeft.menuNavLeft li#MetaCampus{
 }
 
 nav#menuNavLeft.menuNavLeft li#connexion{
-	margin-top: 40vh;
+	margin-top: 32vh;
 }
 
 nav#menuNavLeft.menuNavLeft span{
@@ -175,7 +223,7 @@ nav#menuNavLeft.menuNavLeft a:hover{
 	padding-bottom: 24px;
 	position: fixed;
 	top: 0px;
-	z-index: 999999;
+	z-index: 999998;
 	background-repeat: no-repeat;
 	background-position: left;
 	background-position-x: 1vw;
