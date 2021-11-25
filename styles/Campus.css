@@ -99,7 +99,7 @@ nav#menuNavLeft.menuNavLeft li {
 }
 
 
-nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte
+nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion
 {
 	background-repeat: no-repeat;
 	background-size: 1.5vw;
@@ -128,6 +128,16 @@ nav#menuNavLeft.menuNavLeft li#MonCompte
 	background-image: url("../images/User.png");
 }
 
+nav#menuNavLeft.menuNavLeft li#Duels
+{
+	background-image: url("../images/VS.png");
+}
+
+nav#menuNavLeft.menuNavLeft li#connexion
+{
+	background-image: url("../images/Deconnection.png");
+}
+
 nav#menuNavLeft.menuNavLeft li#MetaCampus{
 	font-weight: bold;
 	padding-bottom: 10vh;
@@ -135,7 +145,7 @@ nav#menuNavLeft.menuNavLeft li#MetaCampus{
 }
 
 nav#menuNavLeft.menuNavLeft li#connexion{
-	padding-top: 40vh;
+	margin-top: 40vh;
 }
 
 nav#menuNavLeft.menuNavLeft span{
@@ -1041,6 +1051,12 @@ div.search-box
 
 **************************************************************************************************/
 
+#CoursBlock a{
+	height: 6vw;
+    width: 40vw;
+	text-decoration: none;
+}
+
 #BodyAccueilProf
 {
 	width:80vw;
@@ -1155,9 +1171,10 @@ div.search-box
 	margin-right:auto;
 }
 
-#CoursBlockStage1
+#CoursBlockStage1,#CoursBlockStage3
 {
 	margin-top:0.2vw;
+	height:1.5vw;
 }
 
 #CoursBlock:hover
@@ -1305,7 +1322,7 @@ div.search-box
 	background-size: 5vw;
 	background-position: left;
 	background-position-x: 1vw;
-	margin-left:2vw;
+	margin-left:1vw;
 	cursor: pointer;
 	transition: transform 250ms;
 	display: flex;
@@ -1323,7 +1340,7 @@ div.search-box
 {
 	margin-left:9vw;
 	font-size:2vw;
-	letter-spacing: 2px;;
+	letter-spacing: 2px;
 	margin-top:auto;
 	margin-bottom:auto;
 }
@@ -1331,7 +1348,7 @@ div.search-box
 #MonCompteInfo, #MonCompteCarac,#MonCompteInventaire
 {
 	padding-bottom:2vw;
-	margin-left:2vw;
+	margin-left:1vw;
 	cursor: pointer;
 	transition: transform 250ms;
 	display: flex;
@@ -1348,10 +1365,10 @@ div.search-box
 {
 	font-size:1.5vw;
 	color:lightblue;
-	margin-left:2vw;
+	margin-left:1vw;
 }
 
-#InputPseudo, #InputEmail, #InputTel, #InputLvl
+#InputPseudo, #InputEmail, #InputTel, #InputLvl, #InputCoin, #InputPoint, #InputTaux
 {
 	margin:auto;
 	cursor: pointer;
@@ -1365,6 +1382,30 @@ div.search-box
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	color:white;
 	text-align: center;
+}
+
+#InputCoin{
+	background-image: url("../images/icon_piece.png");
+	background-repeat: no-repeat;
+	background-size: 2vw;
+	background-position: left;
+	background-position-x: 15vw;
+}
+
+#InputPoint{
+	background-image: url("../images/icon_pioche.png");
+	background-repeat: no-repeat;
+	background-size: 2vw;
+	background-position: left;
+	background-position-x: 15vw;
+}
+
+#InputTaux{
+	background-image: url("../images/icon_pioche.png"), url("../images/icon_slash_blanc.png"), url("../images/icon_piece.png");
+	background-repeat: no-repeat;
+	background-size: 2vw;
+	background-position: right;
+	background-position-x: 13vw, 15vw, 17vw;
 }
 
 #MonCompteStage2
@@ -1406,11 +1447,12 @@ div.search-box
 	width:2vw;
 	height:2vw;
 	margin-top:1vw;
+	margin-bottom:1vw;
 }
 
-#MonCompteInfo:hover,#MonCompteCarac:hover,#MonCompteInventaire:hover
+#MonCompteInfo:hover,#MonCompteCarac:hover,#MonCompteInventaire:hover, #BoutiqueItemCard:hover, #BoutiqueBonAchatCard:hover, #ItemAchat:hover
 {
-	transform: translateY(-10px);
+	transform: translateY(-5px);
 }
 #MonCompteInventaireTabFull
 {
@@ -1509,6 +1551,14 @@ div.search-box
 	margin: auto;
 }
 
+
+/*************************************************************************************************
+
+										Cours Optionel
+
+**************************************************************************************************/
+
+
 #ContentCoursEleve
 {
 	margin-left:20vw;
@@ -1543,7 +1593,6 @@ div.search-box
 }
 
 #SubTitle h1{
-	width: max-content;
     margin-bottom: 2vw;
 }
 
@@ -1552,10 +1601,31 @@ div.search-box
 	transition: transform 250ms;
 	display: flex;
 	flex-direction: row;
-	justify-content:space-around;
+	align-items: center;
+	justify-content: space-between;
 
-	height:6vw;
+	height: 4.5vw;
 	width:40vw;
+	background-color: #542992;
+	margin-bottom: 1vw;
+	border-radius:10px;
+}
+
+#LaBourse, #LaBoutique{
+	display: flex;
+	margin-left: 2vw;
+}
+
+#BoutiqueItemCard
+{
+	margin-left: 1vw;
+	padding-bottom:1vw;
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	margin-top:2vw;
+	flex-direction: column;
+	width:25vw;
 	background-color: rgb(84,41,146);
 	margin-bottom:2vw;
 	border-radius:10px;
@@ -1565,8 +1635,6 @@ div.search-box
 #CoursBlockOptionelStage0{
 	display: flex;
 	flex-direction: row;
-	margin-top: 1vw;
-	margin-bottom:1vw;
 	margin-left: 1vw;
 	margin-right: 1vw;
 
@@ -1583,8 +1651,6 @@ div.search-box
 #CoursBlockOptionelStage3{
 	display: flex;
 	flex-direction: row;
-	margin-top: 1vw;
-	margin-bottom:1vw;
 	margin-left: 1vw;
 	margin-right: 2vw;
 
@@ -1608,7 +1674,6 @@ div.search-box
 }
 
 #CoursBlockOptionelStage1{
-	width:95%;
 	display: flex;
 	flex-direction: row;
 }
@@ -1620,6 +1685,7 @@ div.search-box
 
 #NomMatiere{
 	margin:auto;
+	font-size: 1.3em;
 }
 
 #CoursBlockOptionelStage2{
@@ -1628,4 +1694,360 @@ div.search-box
 	margin-bottom:0.7vw;
 	margin-left:auto;
 	margin-right:auto;
+}
+
+/*************************************************************************************************
+
+										Duels
+
+**************************************************************************************************/
+
+#ContentDuels
+{
+	margin-left: 20vw;
+	margin-top:8vw;
+	width:75vw;
+	display: flex;
+}
+#ContentPersonnagesJoueur1
+{
+	margin-left:7vw;
+}
+
+#ContentPersonnagesJoueur1,#ContentPersonnagesJoueur2
+{
+	width:30vw;
+	Height : 33vw;
+	display: flex;
+	flex-direction: column;
+
+	transition: transform 250ms;
+
+	background-color: #271B58;
+	border-radius:15px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	margin-right:3vw;
+}
+
+#ContentPersonnagesGauche,#ContentPersonnagesDroite
+{
+	display: flex;
+	flex-direction: column;
+	height:10vw;
+	width:15vw;
+	color:white;
+	margin: auto;
+}
+
+#ContentPersonnagesGauche
+{
+    margin-top: 5vw;
+}
+
+#ContentPersonnagesGauche img
+{
+	width:7vw;
+	height:7vw;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#ContentPersonnagesGauche label
+{
+	font-size:1vw;
+	width:max-content;
+	margin: auto;
+}
+
+#ContentPersonnagesDroite h1,#ContentPersonnagesGauche h1
+{
+	font-size:1.5vw;
+	width:max-content;
+	margin: auto;
+	margin-bottom:1vw;
+	margin-top:1vw;
+}
+
+#ContentPersonnagesDroite h2,#ContentPersonnagesGauche h2
+{
+	font-size:1vw;
+	width:max-content;
+	margin: auto;
+	margin-bottom:1vw;
+	margin-top:1vw;
+}
+
+#ContentPersonnagesJoueur1:hover,#ContentPersonnagesJoueur2:hover,#ContentGoDuels:hover
+{
+	transform: translateY(-10px);
+}
+
+#ContentVS
+{	
+	margin-left:2vw;
+	color:white;
+	display: flex;
+	flex-direction: column;
+	margin-right:4vw;
+	width: 30vw;
+	margin-top:9vw;
+}
+
+#ContentRouge
+{
+	padding-bottom: 2vw;
+	background-color: #542992;
+	border-radius:80px;
+}
+
+#ContentVS label,#ContentVS h1,#ContentVS h2
+{
+	font-size:2vw;
+	margin-top:1vw;
+	margin-left: 6.5vw;
+}
+#ContentVS label
+{
+	margin-left: 8vw;
+}
+
+#ContentVS h1
+{
+	font-size:1.5vw;
+	margin-left: 4vw;
+}
+
+#ContentVS h2
+{
+	font-size:0.8vw;
+	margin-top:0.2vw;
+}
+
+#ContentGoDuels
+{
+	margin-left:2vw;
+	margin-top:2vw;
+	font-weight: 900;
+    font-size: 1vw;
+    height: 3vw;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+	width : 15vw;
+	background: #000428; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #271B58, rgb(39,27,88)); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #271B58, rgb(39,27,88)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+#submitDuels
+{
+	background: transparent;
+    border: none;
+    color: white;
+	height:3vw;
+	width:15vw;
+}
+
+/*************************************************************************************************
+
+										Questions
+
+**************************************************************************************************/
+
+#ContentQuestions
+{
+	display: flex;
+
+	width:75vw;
+	Height : 35vw;
+
+	transition: transform 250ms;
+
+	background-color: #271B58;
+	border-radius:15px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	margin-left:22vw;
+	margin-top:10vw;
+}
+
+#ContentQuestionsJoueur
+{
+	width:12vw;
+	height:35vw;
+}
+
+#ContentQuestionsAsk
+{
+	width:51vw;
+	height:35vw;
+}
+
+#ContentPersoDuels
+{
+	width:12vw;
+	height:10vw;
+	margin-top:12vw;
+	display: flex;
+	flex-direction: column;
+	color:white;
+}
+#ContentPersoDuels img
+{
+	width:5vw;
+	height:5vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:1vw;
+}
+
+#ContentPersoDuels label
+{
+	width: max-content;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+#ContentQuestionsAskTitre
+{
+	width:max-content;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:3vw;
+	color:white;
+	font-weight: bold;
+	font-size:2vw;
+}
+
+#ContentQuestionsReponsesFull
+{
+	width:38vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5vw;
+	color:white;
+	border-radius: 10px;
+	border:solid;
+	border-color: white;
+	padding-top:1vw;
+	padding-bottom: 1vw;
+}
+
+#ContentQuestionsReponses
+{
+
+	width:35vw;
+	height:1.6vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 10px;
+	color:white;
+	font-weight: bold;
+	margin:1vw;
+}
+
+#ContentQuestionsReponses:hover
+{
+	transform: translateY(-10px);
+}
+
+.progress {
+	background: rgba(255,255,255,0.1);
+	justify-content: flex-start;
+	border-radius: 100px;
+	align-items: center;
+	position: relative;
+	padding: 0 5px;
+	display: flex;
+	height: 40px;
+	width: 500px;
+	margin-top:2vw;
+	margin-left:9vw;
+}
+
+.progress-value {
+	animation: load 3s normal forwards;
+	box-shadow: 0 10px 40px -10px #fff;
+	border-radius: 100px;
+	background: #fff;
+	height: 30px;
+	width: 0;
+}
+
+@keyframes load {
+	0% { width: 0; }
+	100% { width: 68%; }
+  }
+  
+#ItemAchat{
+	margin-left:1vw;
+	margin-right: 1vw;
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top:1vw;
+	background-color: rgb(39,27,88);
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#ItemAchat img:first-child {
+	margin-left: 1vw;
+}
+
+#ItemAchat img
+{
+	width:1.5vw;
+	height:1.5vw;
+	margin-top:1vw;
+	margin-bottom:1vw;
+}
+
+#LibelleItem{
+	font-size:1.25vw;
+	color:lightblue;
+	margin-left:1vw
+}
+
+#Prix{
+	margin-left: 1vw;
+	font-size:1.25vw;
+}
+
+#BourseCours h3{
+	margin-left: 4.8vw;
+}
+
+#BourseEchange h3, #BoutiqueItem h3{
+	margin-left: 1vw;
+}
+
+#BoutiqueBonAchat{
+	margin-left: 5vw;
+}
+
+#BoutiqueBonAchatCard
+{
+	padding-bottom:1vw;
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	margin-top:2vw;
+	flex-direction: column;
+	width:44vw;
+	background-color: rgb(84,41,146);
+	margin-bottom:2vw;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#ItemPrixComplet{
+	display: flex;
+	margin-right: 1vw;
 }

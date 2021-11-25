@@ -67,11 +67,12 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("AccueilEleves", "Planning",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("cours", "Cours",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("classement", "Classement",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("Duels", "Duels",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("diplomes", "Suivi Scolaire",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MonCompte", "Mon Compte",False,False));
 	}
 
-	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("connexion", "Se déconnecter",False,False));
+	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("connexion", "Se Déconnecter",False,False));
 }
 
 

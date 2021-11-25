@@ -16,73 +16,80 @@ $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("BodyAccueilEleve
             $accueilEleves->ajouterComposantLigne($accueilEleves->creerTitre("Vendredi 26 Novembre 2021",1,"Titre"));
 
             $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlock"));
+                $accueilEleves->ajouterComposantLigne($accueilEleves->debutA(""));
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage1"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "8H"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage1"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "8H"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage2"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("MatieresCours", "MatieresCours", "Mathematiques"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage2"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("MatieresCours", "MatieresCours", "Mathematiques"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage3"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "10H"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mr Pichon"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage3"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "10H"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mr Pichon"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
+                $accueilEleves->ajouterComposantLigne($accueilEleves->finA());
             $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
             $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlock"));
+                $accueilEleves->ajouterComposantLigne($accueilEleves->debutA(""));
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage1"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "10H"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves->toggleSwitch());
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage1"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "10H"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves->toggleSwitch());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage2"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("MatieresCours", "MatieresCours", "Travaux Manuels"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage2"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("MatieresCours", "MatieresCours", "Travaux Manuels"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage3"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "12H"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mr Gard"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage3"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "12H"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mr Gard"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
+                $accueilEleves->ajouterComposantLigne($accueilEleves->finA());
             $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
             $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlock"));
+                $accueilEleves->ajouterComposantLigne($accueilEleves->debutA(""));
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage1"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "14H"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves->toggleSwitch());
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage1"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "14H"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves->toggleSwitch());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage2"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("MatieresCours", "MatieresCours", "Programmation"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage2"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("MatieresCours", "MatieresCours", "Programmation"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage3"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "16H"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mme Abury"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
-
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage3"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "16H"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mme Abury"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                $accueilEleves->ajouterComposantLigne($accueilEleves->finA());
             $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
             $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlock"));
+                $accueilEleves->ajouterComposantLigne($accueilEleves->debutA(""));
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage1"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "16H"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage1"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "16H"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage2"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("MatieresCours", "MatieresCours", "Anglais"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage2"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("MatieresCours", "MatieresCours", "Anglais"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage3"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "18H"));
-                    $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mme Pouvert"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage3"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "18H"));
+                        $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("ProfCours", "ProfCours", "Mme Pouvert"));
+                    $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
+                $accueilEleves->ajouterComposantLigne($accueilEleves->finA());
             $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
 
         $accueilEleves->ajouterComposantLigne($accueilEleves->finDiv());
