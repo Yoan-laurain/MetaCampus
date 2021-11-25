@@ -1365,40 +1365,62 @@ div.search-box
 	margin-left:20vw;
 	margin-top: 5vw;
 	color:white;
-	background-color: white;
 }
 
-#SelectSuivieScolaire{
-	background-color: black;
+#SuivieScolaireTelecharger{
+	margin-top: 1vw;
+	float: center;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#AnneeUniversitaire{
+#AnneeUniversitaire, #DiplômeUniversitaire{
 	float: left;
 	color: white;
 }
 
 #SuivieScolaireDiplomes{
-	background-color: tomato;
 	display: flex;
+	margin-top: 1vw;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#SuivieScolaireDocument{
+	
+	background-color: turquoise;
+	width:63vw;
+	height: 35vw;
+	margin-left:6vw;
 	margin-top: 1vw;
 }
 
-#AnneeUniversitaireBlock
-{
-	cursor: pointer;
-	transition: transform 250ms;
-	display: flex;
-	flex-direction: column;
-	height:2vw;
-	width:5vw;
-	background-color: #5e68ed;
-	margin-bottom:2vw;
-	border-radius:10px;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+#SuivieScolaireDocument img{
+	width:63vw;
+	height: 35vw;
 }
-
-
-
+#TelechargerDocument{
+	background-color: #5e68ed;
+	border-radius: 8px;
+	border: none;
+	color:white;
+	height: 3vw;
+    width: 20vw;
+		
+}
+#diplome, #semestre1 ,#semestre2{
+	background-color: #5e68ed;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    height: 2vw;
+    width: 10vw;
+	margin-right: 2vw;
+    font-size: 0.7vw;
+    margin-left: 1vw;
+}
 
 
 
