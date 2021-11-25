@@ -1449,7 +1449,6 @@ div.search-box
 }
 
 #SubTitle h1{
-	width: max-content;
     margin-bottom: 2vw;
 }
 
@@ -1461,7 +1460,7 @@ div.search-box
 	align-items: center;
 	justify-content: space-between;
 
-	height:6vw;
+	height: 4.5vw;
 	width:40vw;
 	background-color: rgb(84,41,146);
 	margin-bottom:2vw;

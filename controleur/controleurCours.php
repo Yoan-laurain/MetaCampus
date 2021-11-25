@@ -101,7 +101,12 @@ $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("ContentCours
             $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
         $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
+
     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
+
+
+
+
 $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
 $ListeCoursEleve->ajouterComposantTab();
