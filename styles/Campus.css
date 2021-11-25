@@ -2085,6 +2085,101 @@ div.search-box
 	margin-left:20vw;
 	color:white;
 }
+
+#ContenuGeneral{
+	margin-left:20vw;
+<<<<<<< HEAD
+}
+
+#ContenuInterne{
+	display: flex;
+	flex-direction: column;
+	height: 1000px;
+}
+
+
+#EnteteInfos{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 1em;
+	color: white;
+}
+
+#InfoBulles1{
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	align-items: center;
+
+	height: 2vw;
+	width:min-content;
+	background-color: #5E68ED;
+	border-radius:10px;
+	margin-left:  1vw;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+#InfosText{
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+	white-space:nowrap;
+	font-size: 0.8em;
+}
+
+#InfoEleve{
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	align-items: center;
+
+	height: 2vw;
+	width:min-content;
+	background-color: #542992;
+	border-radius:10px;
+	margin-left:  1vw;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin-top: 2vw;
+	color: white;
+}
+#Bar{
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	opacity: 80%;
+	height: 1.8vw;
+	width:70em;
+	background-color: #FFFFFF;
+	border-radius:10px;
+	margin-left:  1vw;
+	padding-left: 1.5em;
+	padding-right: 3em;
+}
+#LogoRecherche{
+	margin-left: 1vw;;
+}
+
+#InfosTextSearch{
+	color: gray;
+}
+
+#SearchBar{
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#ListeEleves{
+	width:80em;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
 /*************************************************************************************************
 
 										Suivie Scolaire
