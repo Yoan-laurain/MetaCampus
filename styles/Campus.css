@@ -1687,11 +1687,15 @@ div.search-box
 	border-radius:80px;
 }
 
+#ContentRouge:hover{
+	transform: translateY(-10px);
+}
+
 #ContentVS label,#ContentVS h1,#ContentVS h2
 {
 	font-size:2vw;
 	margin-top:1vw;
-	margin-left: 6.5vw;
+	margin-left: 6.8vw;
 }
 #ContentVS label
 {
