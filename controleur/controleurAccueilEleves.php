@@ -16,7 +16,7 @@ $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("BodyAccueilEleve
             $accueilEleves->ajouterComposantLigne($accueilEleves->creerTitre("Vendredi 26 Novembre 2021",1,"Titre"));
 
             $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlock"));
-                $accueilEleves->ajouterComposantLigne($accueilEleves->debutA(""));
+                $accueilEleves->ajouterComposantLigne($accueilEleves->debutA("index.php?MetaCampus=CoursChoisi"));
 
                     $accueilEleves->ajouterComposantLigne($accueilEleves->debutDiv("CoursBlockStage1"));
                         $accueilEleves->ajouterComposantLigne($accueilEleves-> creerLabel("HeureCours", "HeureCours", "8H"));
