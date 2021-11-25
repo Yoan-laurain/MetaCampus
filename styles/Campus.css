@@ -937,7 +937,7 @@ div.search-box
 	padding-left: 0.5vh;
 	padding-right: 0.5vh;
 	padding-bottom: 1vh;
-	min-height: 73.5vh;
+	min-height: 75.5vh;
 }
 
 #fCoursChoisi #pieceJ{
@@ -972,7 +972,7 @@ div.search-box
 #fCoursChoisi #tchat{
 	margin-top:1vh;
 	width: 90vh;
-	height: 20vh;
+	height: 22vh;
 	border-radius: 10px;
 	background: #542992;
 }
@@ -987,18 +987,32 @@ div.search-box
 }
 
 #fCoursChoisi input[type="submit"]{
-	background-color: #542992;
+	margin-left:2vh;
+	background: linear-gradient(136.67deg, #FF409A 8.34%, #C438EF 95.26%);;
 	border-radius: 10px;
 	color: #fff;
 	border: none;
 	font-weight: bold;
 	font-size: 1vw;
 	color: white;
-	width: 10vw;
+	width: 8vw;
 	height: 2vw;
 }
 
+#fCoursChoisi #envoie{
+	margin-top: 1vh;
+}
 
+#fCoursChoisi input[type="text"]{
+	margin-left: 1vh;
+	background-color: transparent;
+    width: 30vh;
+    border-color: transparent transparent #ccc transparent;
+    outline: 0;
+    font-size: 1vw;
+	border-width: 0.2vw;
+
+}
 
 /*************************************************************************************************
 

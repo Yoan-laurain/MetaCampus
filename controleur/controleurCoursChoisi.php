@@ -70,7 +70,7 @@ $coursChoisi->ajouterComposantLigne($coursChoisi->debutDiv("Content"));
             $coursChoisi->ajouterComposantLigne($coursChoisi->debutDiv("envoie"));
 
                 $coursChoisi->ajouterComposantLigne($coursChoisi->creerInputTexte("textEnvoi", "textEnvoi","","","Ecrire un message ...",""));
-                $coursChoisi->ajouterComposantLigne($coursChoisi->creerInputSubmit("btnEnvoi","btnEnvoie","",""));
+                $coursChoisi->ajouterComposantLigne($coursChoisi->creerInputSubmit("btnEnvoi","btnEnvoie","envoyer",""));
 
             $coursChoisi->ajouterComposantLigne($coursChoisi->finDiv());
 
