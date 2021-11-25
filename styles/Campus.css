@@ -2088,7 +2088,6 @@ div.search-box
 
 #ContenuGeneral{
 	margin-left:20vw;
-<<<<<<< HEAD
 }
 
 #ContenuInterne{
@@ -2171,6 +2170,14 @@ div.search-box
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+#LogoRecherche:hover{
+	transform: translateY(-10px);
+}
+
+#InfoEleve:hover{
+	transform: translateY(-1px);
 }
 
 #ListeEleves{
