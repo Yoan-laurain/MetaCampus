@@ -1203,7 +1203,7 @@ div.search-box
 	background-size: 5vw;
 	background-position: left;
 	background-position-x: 1vw;
-	margin-left:2vw;
+	margin-left:1vw;
 	cursor: pointer;
 	transition: transform 250ms;
 	display: flex;
@@ -1584,20 +1584,20 @@ div.search-box
 {
 	margin-left: 20vw;
 	margin-top:8vw;
-}
-
-#ContentPersonnages
-{
+	width:75vw;
 	display: flex;
-	width:60vw;
-	margin-left:5vw;
+}
+#ContentPersonnagesJoueur1
+{
+	margin-left:7vw;
 }
 
 #ContentPersonnagesJoueur1,#ContentPersonnagesJoueur2
 {
 	width:30vw;
-	Height : 10vw;
+	Height : 33vw;
 	display: flex;
+	flex-direction: column;
 
 	transition: transform 250ms;
 
@@ -1614,12 +1614,18 @@ div.search-box
 	height:10vw;
 	width:15vw;
 	color:white;
+	margin: auto;
+}
+
+#ContentPersonnagesGauche
+{
+    margin-top: 5vw;
 }
 
 #ContentPersonnagesGauche img
 {
-	width:5vw;
-	height:5vw;
+	width:7vw;
+	height:7vw;
 	margin-left:auto;
 	margin-right: auto;
 }
@@ -1655,29 +1661,38 @@ div.search-box
 }
 
 #ContentVS
-{
-	background-color: #c92b25;
-	border-radius:80px;
-	width:12vw;
-	Height : 10vw;
-	display: flex;
-	margin-left:30.5vw;
-	margin-top:2vw;
+{	
+	margin-left:2vw;
 	color:white;
+	display: flex;
 	flex-direction: column;
+	margin-right:4vw;
+	width: 30vw;
+	margin-top:9vw;
+}
+
+#ContentRouge
+{
+	padding-bottom: 2vw;
+	background-color: #542992;
+	border-radius:80px;
 }
 
 #ContentVS label,#ContentVS h1,#ContentVS h2
 {
 	font-size:2vw;
 	margin-top:1vw;
-	width: max-content;
-	margin-left:auto;
-	margin-right: auto;
+	margin-left: 6.5vw;
 }
+#ContentVS label
+{
+	margin-left: 8vw;
+}
+
 #ContentVS h1
 {
-	font-size:1vw;
+	font-size:1.5vw;
+	margin-left: 4vw;
 }
 
 #ContentVS h2
@@ -1688,8 +1703,8 @@ div.search-box
 
 #ContentGoDuels
 {
-	margin-left:29vw;
-	margin-top:4vw;
+	margin-left:2vw;
+	margin-top:2vw;
 	font-weight: 900;
     font-size: 1vw;
     height: 3vw;
@@ -1701,8 +1716,8 @@ div.search-box
     cursor: pointer;
 	width : 15vw;
 	background: #000428; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, rgb(149,24,245), rgb(39,27,88)); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, rgb(149,24,245), rgb(39,27,88)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to bottom, #271B58, rgb(39,27,88)); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #271B58, rgb(39,27,88)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
 
@@ -1711,8 +1726,8 @@ div.search-box
 	background: transparent;
     border: none;
     color: white;
-    margin-left: 5vw;
-    margin-top: 0.8vw;
+	height:3vw;
+	width:15vw;
 }
 
 /*************************************************************************************************
