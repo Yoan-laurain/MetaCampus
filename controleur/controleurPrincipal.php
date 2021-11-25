@@ -68,6 +68,7 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("cours", "Cours",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("classement", "Classement",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("diplomes", "Notes",False,False));
+		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("Duels", "Duels",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MonCompte", "Mon Compte",False,False));
 	}
 
