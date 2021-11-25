@@ -24,10 +24,26 @@ session_start();
 				$(window).scroll( function()
 				{
 					var scroll = $(window).scrollTop();
-					if ( scroll > 50 ) { $("#Navigation").css("background-color", "rgb(149,24,245)"); }
-					else { $("#Navigation").css("background-color", "transparent"); }
+					if ( scroll > 50 ) { $("#Navigation").addClass("active") }
+					else { $("#Navigation").removeClass("active") }
 				})
 			})
+
+			let menu = 0;
+			function toggle_menu(data)
+			{
+				if(menu == 0)
+				{
+					document.getElementById("menuNavLeft").classList.add("toggle");
+					data.classList.add("toggle");
+					menu = 1;
+				} else if(menu == 1)
+				{
+					document.getElementById("menuNavLeft").classList.remove("toggle");
+					data.classList.remove("toggle");
+					menu = 0;
+				}
+			}
 		</script>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

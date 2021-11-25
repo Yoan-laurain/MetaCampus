@@ -56,7 +56,7 @@ $menuNavHaut->creerMenu($_SESSION['MetaCampus'], 'MetaCampus');
 
 // Menu de navigation latéral 
 
-$menuNavLeft = new Menu("menuNavLeft");
+$menuNavLeft = new Menu("menuNavLeftCon");
 
 if(isset($_SESSION['identification']) && $_SESSION['identification']){
 
