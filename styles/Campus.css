@@ -146,14 +146,14 @@ nav#menuNavLeft.menuNavLeft li {
 }
 
 
-nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion,nav#menuNavLeft.menuNavLeft li#suiviescolaire
+nav#menuNavLeft.menuNavLeft li#AccueilEleves,li#AccueilProf,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion,nav#menuNavLeft.menuNavLeft li#suiviescolaire
 {
 	background-repeat: no-repeat;
 	background-size: 1.5vw;
 	background-position: left;
 	background-position-y: center;
 }
-nav#menuNavLeft.menuNavLeft li#AccueilEleves
+nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#AccueilProf
 {
 	background-image: url("../images/Calendar.png");
 }
