@@ -10,8 +10,6 @@ $Duels = new Formulaire('post', 'index.php', 'fDuels', 'fDuels','multipart/form-
 
 $Duels->ajouterComposantLigne($Duels->debutDiv("ContentDuels"));
 
-    $Duels->ajouterComposantLigne($Duels->debutDiv("ContentPersonnages"));
-
         $Duels->ajouterComposantLigne($Duels->debutDiv("ContentPersonnagesJoueur1"));
 
             $Duels->ajouterComposantLigne($Duels->debutDiv("ContentPersonnagesGauche"));
@@ -26,6 +24,19 @@ $Duels->ajouterComposantLigne($Duels->debutDiv("ContentDuels"));
 
         $Duels->ajouterComposantLigne($Duels->finDiv());
 
+        $Duels->ajouterComposantLigne($Duels->debutDiv("ContentVS"));
+            $Duels->ajouterComposantLigne($Duels->debutDiv("ContentRouge")); 
+                $Duels->ajouterComposantLigne($Duels->creerTitre("Mathématiques",1,"Titre"));
+                $Duels->ajouterComposantLigne($Duels->creerTitre("Arithmétiques",2,"SousTitre"));
+                $Duels->ajouterComposantLigne($Duels-> creerLabel("", "", "VS"));
+
+                $Duels->ajouterComposantLigne($Duels->debutDiv("ContentGoDuels"));
+                    $Duels->ajouterComposantLigne($Duels-> creerInputSubmit('submitDuels', 'submitDuels', "LET'S GO"));
+                $Duels->ajouterComposantLigne($Duels->finDiv());
+            $Duels->ajouterComposantLigne($Duels->finDiv());
+        $Duels->ajouterComposantLigne($Duels->finDiv());
+
+
         $Duels->ajouterComposantLigne($Duels->debutDiv("ContentPersonnagesJoueur2"));
 
             $Duels->ajouterComposantLigne($Duels->debutDiv("ContentPersonnagesGauche"));
@@ -39,22 +50,6 @@ $Duels->ajouterComposantLigne($Duels->debutDiv("ContentDuels"));
             $Duels->ajouterComposantLigne($Duels->finDiv());
 
         $Duels->ajouterComposantLigne($Duels->finDiv());
-
-    $Duels->ajouterComposantLigne($Duels->finDiv());
-
-    $Duels->ajouterComposantLigne($Duels->debutDiv("ContentVS"));
-
-        $Duels->ajouterComposantLigne($Duels-> creerLabel("", "", "VS"));
-        $Duels->ajouterComposantLigne($Duels->creerTitre("Mathématiques",1,"Titre"));
-        $Duels->ajouterComposantLigne($Duels->creerTitre("Arithmétiques",2,"SousTitre"));
-
-    $Duels->ajouterComposantLigne($Duels->finDiv());
-
-    $Duels->ajouterComposantLigne($Duels->debutDiv("ContentGoDuels"));
-
-        $Duels->ajouterComposantLigne($Duels-> creerInputSubmit('submitDuels', 'submitDuels', "LET'S GO"));
-
-    $Duels->ajouterComposantLigne($Duels->finDiv());
 
 $Duels->ajouterComposantLigne($Duels->finDiv());
 
