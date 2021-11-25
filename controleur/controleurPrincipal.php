@@ -72,7 +72,7 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MonCompte", "Mon Compte",False,False));
 	}
 
-	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("connexion", "Se déconnecter",False,False));
+	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("connexion", "Se Déconnecter",False,False));
 }
 
 
