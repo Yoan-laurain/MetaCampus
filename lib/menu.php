@@ -66,7 +66,7 @@ class Menu{
 				{
 					$this->menu .= "<li class='actif' id = '" . $composant[0] ."'>";
 					$this->menu .= "<a href='index.php?" . $nomMenu ;
-					$this->menu .= "=" . $this->composants[0][0] . "' >";
+					$this->menu .= "=" . $this->composants[$i][0] . "' >";
 					$this->menu .=  "<span>" . $composant[1] ."</span>";
 					$this->menu .= "</a>";
 				}

@@ -9,7 +9,7 @@ else
 {
 	if(!isset($_SESSION['MetaCampus'])){
 		$_SESSION['MetaCampus'] = "accueil";
-		
+
 	}
 }
 
@@ -60,8 +60,6 @@ $menuNavLeft = new Menu("menuNavLeft");
 
 if(isset($_SESSION['identification']) && $_SESSION['identification']){
 
-	
-
 	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MetaCampus", "Meta Campus",False,False));
 	
 	if ($_SESSION['identification']->getProf() == 0){
@@ -71,10 +69,8 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("classement", "Classement",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("diplomes", "Notes",False,False));
 		$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("MonCompte", "Mon Compte",False,False));
-
 	}
 
-	
 	$menuNavLeft->ajouterComposant($menuNavLeft->creerItemLien("connexion", "Se déconnecter",False,False));
 }
 
@@ -90,8 +86,6 @@ if(isset($_SESSION['identification']) && $_SESSION['identification']){
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("notifications", "", false, false));
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("comptes", "", false, false));
 	$menuNavTopCon->ajouterComposant($menuNavTopCon->creerItemLien("MonCompte", ucfirst($_SESSION['identification']->getPrenom())." ".ucfirst($_SESSION['identification']->getNom()), false, false));
-
-	
 }
 
 $menuNavTopCon->creerMenu($_SESSION['MetaCampus'], 'MetaCampus');
