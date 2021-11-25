@@ -1517,6 +1517,7 @@ div.search-box
 	background-color: transparent;
 	border: none;
 	color:white;
+	text-decoration: none;
 }
 
 #MonCompteInventaireBoutonAchat:hover,#MonCompteInventaireBoutonVente:hover,#MonCompteContent:hover
@@ -2050,4 +2051,15 @@ div.search-box
 #ItemPrixComplet{
 	display: flex;
 	margin-right: 1vw;
+}
+
+/*************************************************************************************************
+
+										Questions
+
+**************************************************************************************************/
+
+#ContenuGeneral{
+	margin-left:20vw;
+	color:white;
 }
