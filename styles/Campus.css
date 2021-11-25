@@ -886,6 +886,120 @@ div.search-box
 }
 
 
+/*************************************************************************************************
+
+										Cours Choisi
+
+**************************************************************************************************/
+
+#fCoursChoisi{
+	padding-top: 1vh;
+	padding-left: 43vh;
+	color:#ffffff;
+}
+
+#fCoursChoisi #TopTitle{
+	margin-bottom: 10vh;
+}
+
+#fCoursChoisi #Content{
+	display: flex;
+}
+
+#fCoursChoisi #leftSide{
+	margin-top:5vh;
+	display:flex;
+	flex-direction: column;
+	margin-right: 2vh;
+}
+
+#fCoursChoisi #rightSide{
+	margin-top:5vh;
+	display:flex;
+	flex-direction: column;
+	margin-right: 2vh;
+}
+
+#fCoursChoisi #prof{
+	background: #542992;
+	padding-left: 10vh;
+	padding-right: 10vh;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 1vh;
+}
+
+#fCoursChoisi #pieceJointes{
+	background: #542992;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-left: 0.5vh;
+	padding-right: 0.5vh;
+	padding-bottom: 1vh;
+	min-height: 73.5vh;
+}
+
+#fCoursChoisi #pieceJ{
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	padding-right: 6vh;
+	padding-left: 6vh;
+	margin-top:1vh;
+	background: #271B58;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#fCoursChoisi video{
+	width: 90vh;
+	border-radius: 10px;
+	height: 50vh;
+}
+
+#fCoursChoisi #video{
+	margin-top:8vh;
+	padding-top: 1vh;
+	padding-bottom: 1.5vh;
+	padding-left: 0.5vh;
+	padding-right: 3vh;
+	width: 91vh;
+	height: 52vh;
+	border-radius: 10px;
+	background: #542992;
+}
+
+#fCoursChoisi #tchat{
+	margin-top:1vh;
+	width: 90vh;
+	height: 20vh;
+	border-radius: 10px;
+	background: #542992;
+}
+
+#fCoursChoisi #recu{
+	margin-top:1vh;
+	margin-left: 0.5vh;
+	width: 89vh;
+	height: 15vh;
+	border-radius: 10px;
+	background: #271B58;
+}
+
+#fCoursChoisi input[type="submit"]{
+	background-color: #542992;
+	border-radius: 10px;
+	color: #fff;
+	border: none;
+	font-weight: bold;
+	font-size: 1vw;
+	color: white;
+	width: 10vw;
+	height: 2vw;
+}
+
+
 
 /*************************************************************************************************
 
@@ -1404,6 +1518,7 @@ div.search-box
 	background-color: transparent;
 	border: none;
 	color:white;
+	text-decoration: none;
 }
 
 #MonCompteInventaireBoutonAchat:hover,#MonCompteInventaireBoutonVente:hover,#MonCompteContent:hover
@@ -1689,6 +1804,10 @@ div.search-box
     margin-left: 2vw;
 }
 
+#ContentRouge:hover{
+	transform: translateY(-10px);
+}
+
 #ContentVS label,#ContentVS h1,#ContentVS h2
 {
 	font-size:2vw;
@@ -1947,4 +2066,15 @@ div.search-box
 #ItemPrixComplet{
 	display: flex;
 	margin-right: 1vw;
+}
+
+/*************************************************************************************************
+
+										Questions
+
+**************************************************************************************************/
+
+#ContenuGeneral{
+	margin-left:20vw;
+	color:white;
 }
