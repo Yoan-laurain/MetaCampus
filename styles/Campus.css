@@ -99,7 +99,7 @@ nav#menuNavLeft.menuNavLeft li {
 }
 
 
-nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels
+nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion
 {
 	background-repeat: no-repeat;
 	background-size: 1.5vw;
@@ -133,6 +133,11 @@ nav#menuNavLeft.menuNavLeft li#Duels
 	background-image: url("../images/VS.png");
 }
 
+nav#menuNavLeft.menuNavLeft li#connexion
+{
+	background-image: url("../images/Deconnection.png");
+}
+
 nav#menuNavLeft.menuNavLeft li#MetaCampus{
 	font-weight: bold;
 	padding-bottom: 10vh;
@@ -140,7 +145,7 @@ nav#menuNavLeft.menuNavLeft li#MetaCampus{
 }
 
 nav#menuNavLeft.menuNavLeft li#connexion{
-	padding-top: 40vh;
+	margin-top: 40vh;
 }
 
 nav#menuNavLeft.menuNavLeft span{
@@ -1487,6 +1492,9 @@ div.search-box
 
 	height: 4.5vw;
 	width:40vw;
+	background-color: #542992;
+	margin-bottom: 1vw;
+	border-radius:10px;
 }
 
 #LaBourse, #LaBoutique{

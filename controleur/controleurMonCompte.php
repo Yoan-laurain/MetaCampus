@@ -35,7 +35,7 @@ $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("BodyMonCompte"));
             $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteCaraStage1"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerTitre("Niveau :",1,"Titre"));
                 $MonCompte->ajouterComposantLigne($MonCompte->creerLabel("InputLvl", "InputLvl","98"));
-                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Star2.png"));
+                $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Star.png"));
             $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
             $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteCaraStage2"));
@@ -62,9 +62,14 @@ $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("BodyMonCompte"));
 
             $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireTabFull"));
                 $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireTab"));
-                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Wallet.png"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Minecraft.png"));
                     $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Hat.png"));
                     $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\SkateBoard.png"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Cut.png"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Potion.png"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Sorcier.png"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Terroriste.png"));
+                    $MonCompte->ajouterComposantLigne($MonCompte->creerImage("images\Water.png"));
                 $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
                 $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteInventaireTab2"));
