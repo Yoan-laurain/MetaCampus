@@ -84,7 +84,7 @@ $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("ContentCours
                 $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionel"));
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage0"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\Wallet.png"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\langue.png"));
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage1"));
