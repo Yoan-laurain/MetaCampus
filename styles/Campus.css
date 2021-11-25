@@ -1403,6 +1403,7 @@ div.search-box
 	background-color: transparent;
 	border: none;
 	color:white;
+	text-decoration: none;
 }
 
 #MonCompteInventaireBoutonAchat:hover,#MonCompteInventaireBoutonVente:hover,#MonCompteContent:hover
