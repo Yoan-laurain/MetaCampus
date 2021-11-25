@@ -19,10 +19,10 @@ $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->debutDiv("BodyMonCompte"
             $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->debutDiv("MonCompteInfo"));
 
                 $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->creerTitre("Combien ?",1,"Titre"));
-                $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->creerInputTexte("InputCoin", "InputCoin", "12" , 1, "", ""));
+                $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->creerInputTexte("InputPoint", "InputPoint   ", "457" , 1, "", ""));
 
                 $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->creerTitre("Pour quel prix ?",1,"Titre"));
-                $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->creerInputTexte("InputPoint", "InputPoint", "457" , 1,"",""));
+                $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->creerInputTexte("InputCoin", "InputCoin", "12" , 1,"",""));
 
                 $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->creerTitre("Mon taux",1,"Titre"));
                 $boutiqueEleves->ajouterComposantLigne($boutiqueEleves->creerInputTexteDisabled("InputTaux", "InputTaux", "38,08" , 1,"",""));
