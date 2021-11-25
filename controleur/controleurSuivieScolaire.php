@@ -6,8 +6,11 @@ $SuivieScolaire = new Formulaire('post', 'index.php', 'fSuivieScolaire', 'fSuivi
 $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->debutDiv("BodySuivieScolaire"));
     $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->debutDiv("SelectSuivieScolaire"));
         $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->creerLabel("AnneeUniversitaire", "AnneeUniversitaire", "Année universitaire: "));
-        $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->creerSelect("selectAnnee","selectAnnee",["3eme année","1er année","2eme année"],""));
+        $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->debutDiv("SelectSuivieScolaire2"));
+            $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->creerSelect("selectAnnee","selectAnnee",["3eme année","1er année","2eme année"],""));
+        $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->finDiv());
     $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->finDiv());
+    
 
     $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->debutDiv("SuivieScolaireDiplomes"));
         // $SuivieScolaire->ajouterComposantLigne($SuivieScolaire->creerLabel("DiplômeUniversitaire", "DiplômeUniversitaire", "Selectionnez le document que vous voulez: "));

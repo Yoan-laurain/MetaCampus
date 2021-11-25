@@ -2155,5 +2155,13 @@ div.search-box
     margin-left: 1vw;
 }
 
+#SelectSuivieScolaire2{
+	margin-left: 1vw;
+    border-radius: 10px;
+}
+
+#SelectSuivieScolaire{
+	display: flex;
+}
 
 
