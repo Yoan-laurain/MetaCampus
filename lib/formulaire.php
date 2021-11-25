@@ -486,8 +486,40 @@ class Formulaire{
 			$composant.= "<td>" . "Simon" ." ". "MORIN" . "</td>";
 			$composant.="<td>" . "7828" . "</td>";
 			
+			$composant.="</tr>";
+
+			$composant.="<tr>";
+			$composant.="<td>" . "3ème" . "</td>";
+			$composant.= "<td>" . "Nathan" ." ". "LESOURD" . "</td>";
+			$composant.="<td>" . "7819" . "</td>";
 			
 			$composant.="</tr>";
+
+			$composant.="<tr>";
+			$composant.="<td>" . "4ème" . "</td>";
+			$composant.= "<td>" . "Maël" ." ". "MARTY" . "</td>";
+			$composant.="<td>" . "7802" . "</td>";
+			
+			$composant.="</tr>";
+
+			$composant.="<tr>";
+			$composant.="<td>" . "5ème" . "</td>";
+			$composant.= "<td>" . "Hugo" ." ". "CARRICART" . "</td>";
+			$composant.="<td>" . "7799" . "</td>";
+			
+			
+			$composant.="</tr>";
+
+			$composant.="<tr>";
+			$composant.="<td>" . "6ème" . "</td>";
+			$composant.= "<td>" . "Yoan" ." ". "LAURAIN" . "</td>";
+			$composant.="<td>" . "7795" . "</td>";
+			
+			
+			$composant.="</tr>";
+
+
+
 		
 
 
@@ -504,9 +536,36 @@ class Formulaire{
 		$composant .= "</tr></thead><tbody>";		
 			$composant.="<tr>";
 			$composant.="<td>" . "1er" . "</td>";
-			$composant.= "<td>" . "Matthieu" ." ". "Pichon" . "</td>";
+			$composant.= "<td>" . "Matthieu" ." ". "PICHON" . "</td>";
 			$composant.="<td>" . "50" . "</td>";
 			
+			$composant.="</tr>";
+
+			$composant.="<tr>";
+			$composant.="<td>" . "2ème" . "</td>";
+			$composant.= "<td>" . "Jean" ." ". "MARTONI" . "</td>";
+			$composant.="<td>" . "45" . "</td>";
+			
+			$composant.="</tr>";
+
+			$composant.="<tr>";
+			$composant.="<td>" . "3ème" . "</td>";
+			$composant.= "<td>" . "Silvia" ." ". "DOS SANTOS" . "</td>";
+			$composant.="<td>" . "44" . "</td>";
+			
+			$composant.="</tr>";
+
+			$composant.="<tr>";
+			$composant.="<td>" . "4ème" . "</td>";
+			$composant.= "<td>" . "Michel" ." ". "SILVA" . "</td>";
+			$composant.="<td>" . "40" . "</td>";
+			
+			$composant.="</tr>";
+
+			$composant.="<tr>";
+			$composant.="<td>" . "5ème" . "</td>";
+			$composant.= "<td>" . "Daniel" ." ". "LECARDER" . "</td>";
+			$composant.="<td>" . "38" . "</td>";
 			
 			$composant.="</tr>";
 		

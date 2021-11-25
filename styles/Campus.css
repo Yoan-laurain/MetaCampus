@@ -909,7 +909,8 @@ div.search-box
 	text-align: center;
 	border: #fff;
 	border-top: solid 1px;
-	
+	padding-top: .5vh;
+	padding-bottom: .5vh;
 	border-spacing: 2px;
 	padding-left: 7vh;
 	padding-right: 7vh;
