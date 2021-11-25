@@ -1176,12 +1176,12 @@ div.search-box
 {
 	margin-left:9vw;
 	font-size:2vw;
-	letter-spacing: 2px;;
+	letter-spacing: 2px;
 	margin-top:auto;
 	margin-bottom:auto;
 }
 
-#MonCompteInfo, #MonCompteCarac,#MonCompteInventaire, #Bourse
+#MonCompteInfo, #MonCompteCarac,#MonCompteInventaire
 {
 	padding-bottom:2vw;
 	margin-left:1vw;
@@ -1283,9 +1283,10 @@ div.search-box
 	width:2vw;
 	height:2vw;
 	margin-top:1vw;
+	margin-bottom:1vw;
 }
 
-#MonCompteInfo:hover,#MonCompteCarac:hover,#MonCompteInventaire:hover,#Bourse
+#MonCompteInfo:hover,#MonCompteCarac:hover,#MonCompteInventaire:hover, #BoutiqueItemCard:hover, #BoutiqueBonAchatCard:hover, #ItemAchat:hover
 {
 	transform: translateY(-5px);
 }
@@ -1369,6 +1370,92 @@ div.search-box
 	margin: auto;
 }
 
-#BoutiqueBourse{
+#LaBourse, #LaBoutique{
 	display: flex;
+	margin-left: 2vw;
+}
+
+#BoutiqueItemCard
+{
+	margin-left: 1vw;
+	padding-bottom:1vw;
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	margin-top:2vw;
+	flex-direction: column;
+	width:25vw;
+	background-color: rgb(84,41,146);
+	margin-bottom:2vw;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#ItemAchat{
+	margin-left:1vw;
+	margin-right: 1vw;
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top:1vw;
+	background-color: rgb(39,27,88);
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#ItemAchat img:first-child {
+	margin-left: 1vw;
+}
+
+#ItemAchat img
+{
+	width:1.5vw;
+	height:1.5vw;
+	margin-top:1vw;
+	margin-bottom:1vw;
+}
+
+#LibelleItem{
+	font-size:1.25vw;
+	color:lightblue;
+	margin-left:1vw
+}
+
+#Prix{
+	margin-left: 1vw;
+	font-size:1.25vw;
+}
+
+#BourseCours h3{
+	margin-left: 4.8vw;
+}
+
+#BourseEchange h3, #BoutiqueItem h3{
+	margin-left: 1vw;
+}
+
+#BoutiqueBonAchat{
+	margin-left: 5vw;
+}
+
+#BoutiqueBonAchatCard
+{
+	padding-bottom:1vw;
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	margin-top:2vw;
+	flex-direction: column;
+	width:44vw;
+	background-color: rgb(84,41,146);
+	margin-bottom:2vw;
+	border-radius:10px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#ItemPrixComplet{
+	display: flex;
+	margin-right: 1vw;
 }
