@@ -2076,6 +2076,7 @@ div.search-box
   }
   
 #ItemAchat{
+	align-items: center;
 	margin-left:1vw;
 	margin-right: 1vw;
 	cursor: pointer;
@@ -2142,6 +2143,7 @@ div.search-box
 #ItemPrixComplet{
 	display: flex;
 	margin-right: 1vw;
+	align-items: center;
 }
 
 /*************************************************************************************************
