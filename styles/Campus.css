@@ -1008,9 +1008,15 @@ div.search-box
 	margin-top: 1vh;
 }
 
+#fCoursChoisi #monText{
+	padding-top:1vh;
+	margin-left: 1vh;
+}
+
 #fCoursChoisi input[type="text"]{
 	margin-left: 1vh;
 	background-color: transparent;
+	color: #fff;
     width: 30vh;
     border-color: transparent transparent #ccc transparent;
     outline: 0;

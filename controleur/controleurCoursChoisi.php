@@ -63,7 +63,9 @@ $coursChoisi->ajouterComposantLigne($coursChoisi->debutDiv("Content"));
 
             $coursChoisi->ajouterComposantLigne($coursChoisi->debutDiv("recu"));
 
-                $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabel("textRecu", "textRecu1","Tim : désolé je suis un peu en retard" ));
+                $coursChoisi->ajouterComposantLigne($coursChoisi->debutDiv("monText"));
+                    $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabel("textRecu", "textRecu","Tim : désolé je suis un peu en retard" ));
+                $coursChoisi->ajouterComposantLigne($coursChoisi->finDiv());
 
             $coursChoisi->ajouterComposantLigne($coursChoisi->finDiv());
             
