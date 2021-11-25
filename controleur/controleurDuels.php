@@ -1,5 +1,11 @@
 <?php
 
+if (isset($_POST['submitDuels']))
+{
+    header('location: index.php?MetaCampus=Questions'); 
+    exit;
+}
+
 $Duels = new Formulaire('post', 'index.php', 'fDuels', 'fDuels','multipart/form-data');
 
 $Duels->ajouterComposantLigne($Duels->debutDiv("ContentDuels"));
