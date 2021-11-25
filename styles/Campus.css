@@ -1487,6 +1487,9 @@ div.search-box
 
 	height: 4.5vw;
 	width:40vw;
+	background-color: #542992;
+	margin-bottom: 1vw;
+	border-radius:10px;
 }
 
 #LaBourse, #LaBoutique{
