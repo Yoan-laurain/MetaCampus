@@ -10,8 +10,8 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("topAccueil"));
 
             $accueil->ajouterComposantLigne($accueil->creerTitre("Meta Campus",1,"Titre"));
             $accueil->ajouterComposantLigne($accueil->creerTitre("Le Campus 3.0 qui vous fais envie",2,"SousTitre"));
-            $accueil->ajouterComposantLigne($accueil->creerTitre("Des milliers d'élèves à travers le monde, des opportunités pour tous! Rejoignez près de 10 000 étudiants en informatique et développez avec eux.",3,"SousTitre"));
-            $accueil->ajouterComposantLigne($accueil->creerInputSubmit("", "bouttonAccueil", "ON SE LANCE!", ""));
+            $accueil->ajouterComposantLigne($accueil->creerTitre("Des milliers d'élèves à travers le monde, des opportunitées pour tous ! Rejoignez près de 10 000 étudiants en informatique et développez avec eux.",3,"SousTitre"));
+            $accueil->ajouterComposantLigne($accueil->creerInputSubmit("", "bouttonAccueil", "ON SE LANCE !", ""));
 
         $accueil->ajouterComposantLigne($accueil->finDiv());
 
@@ -20,11 +20,11 @@ $accueil->ajouterComposantLigne($accueil->finDiv());
 $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil"));
 
     $accueil->ajouterComposantLigne($accueil->debutDiv("AccueilBlock1"));
-        $accueil->ajouterComposantLigne($accueil->creerTitre("HOW IT WORKS",1,"Titre"));
+        $accueil->ajouterComposantLigne($accueil->creerTitre("COMMENT ÇA FONCTIONNE ?",1,"Titre"));
    $accueil->ajouterComposantLigne($accueil->finDiv());
 
     $accueil->ajouterComposantLigne($accueil->debutDiv("AccueilBlock2"));
-        $accueil->ajouterComposantLigne($accueil->creerTitre("Des cours en réalité virtuelle, des diplômes reconnu et unique certifié par notre blockchain, un système de personnage style RPG avec des duels, un classement et bien plus encore...",3,"SousTitre"));
+        $accueil->ajouterComposantLigne($accueil->creerTitre("Des cours en réalité virtuelle, des diplômes reconnus et unique, certifiés par notre blockchain. Un système de personnage style RPG avec des duels, un classement et bien plus encore...",3,"DescriptionAccueil"));
     $accueil->ajouterComposantLigne($accueil->finDiv());
 
     $accueil->ajouterComposantLigne($accueil->debutDiv("AccueilBlock3-4"));
@@ -33,9 +33,9 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil"));
             $accueil->ajouterComposantLigne($accueil->creerVideo("images\VrVideo.mp4"));
         $accueil->ajouterComposantLigne($accueil->finDiv());
 
-        $accueil->ajouterComposantLigne($accueil->debutDiv("AccueilBlock4"));
+        /* $accueil->ajouterComposantLigne($accueil->debutDiv("AccueilBlock4"));
             $accueil->ajouterComposantLigne($accueil->creerImage("images\AccueilVr.png"));
-        $accueil->ajouterComposantLigne($accueil->finDiv());
+        $accueil->ajouterComposantLigne($accueil->finDiv()); */
 
     $accueil->ajouterComposantLigne($accueil->finDiv());
 
@@ -59,8 +59,8 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil2"));
         $accueil->ajouterComposantLigne($accueil->debutDiv("First-Block2"));
 
             $accueil->ajouterComposantLigne($accueil->creerImage("images\Book.png"));
-            $accueil->ajouterComposantLigne($accueil->creerTitre("Apprenez avec des pros!",1,"Titre"));
-            $accueil->ajouterComposantLigne($accueil->creerTitre("Nos professeurs et intervenants sont sélectionner selon des critères spécifiques et leur humour",2,"SousTitre"));
+            $accueil->ajouterComposantLigne($accueil->creerTitre("Apprenez avec des pros !",1,"Titre"));
+            $accueil->ajouterComposantLigne($accueil->creerTitre("Nos professeurs et intervenants sont sélectionnés selon des critères spécifiques et leur humour",2,"SousTitre"));
 
         $accueil->ajouterComposantLigne($accueil->finDiv());
 
@@ -79,7 +79,7 @@ $accueil->ajouterComposantLigne($accueil->finDiv());
 $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil3"));
 
     $accueil->ajouterComposantLigne($accueil->creerTitre("PRIX",1,"Titre"));
-    $accueil->ajouterComposantLigne($accueil->creerTitre("Chaque année au sein de notre campus vous coûtera 8000 euros. Si peu pour bien réussir",2,"SousTitre"));
+    $accueil->ajouterComposantLigne($accueil->creerTitre("Chaque année au sein de notre campus coûte 8000 euros. Si peu pour bien réussir",2,"SousTitre"));
 
     $accueil->ajouterComposantLigne($accueil->debutDiv("TarifContent"));
 
@@ -97,7 +97,7 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil3"));
             $accueil->ajouterComposantLigne($accueil->finDiv());
 
             $accueil->ajouterComposantLigne($accueil->debutDiv("PurchaseContent"));
-                $accueil->ajouterComposantLigne($accueil->creerInputSubmit("", "bouttonAccueilBuy", "ON SE LANCE!", ""));
+                $accueil->ajouterComposantLigne($accueil->creerInputSubmit("", "bouttonAccueilBuy", "ON SE LANCE !", ""));
             $accueil->ajouterComposantLigne($accueil->finDiv());
 
         $accueil->ajouterComposantLigne($accueil->finDiv());
@@ -116,7 +116,7 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil3"));
         $accueil->ajouterComposantLigne($accueil->finDiv());
 
             $accueil->ajouterComposantLigne($accueil->debutDiv("PurchaseContent"));
-                $accueil->ajouterComposantLigne($accueil->creerInputSubmit("", "bouttonAccueilBuy", "ON SE LANCE!", ""));
+                $accueil->ajouterComposantLigne($accueil->creerInputSubmit("", "bouttonAccueilBuy", "ON SE LANCE !", ""));
             $accueil->ajouterComposantLigne($accueil->finDiv());
 
         $accueil->ajouterComposantLigne($accueil->finDiv());

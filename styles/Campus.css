@@ -41,8 +41,7 @@ _   _               _
 	background-position: left;
 	background-position-x: 1vw;
 	font-size:1vw;
-
-	background-size: 3vw;
+	background-size: 5vw;
 }
 
 #menuNav {
@@ -99,7 +98,7 @@ nav#menuNavLeft.menuNavLeft li {
 }
 
 
-nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion
+nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion,nav#menuNavLeft.menuNavLeft li#suiviescolaire
 {
 	background-repeat: no-repeat;
 	background-size: 1.5vw;
@@ -120,6 +119,10 @@ nav#menuNavLeft.menuNavLeft li#classement
 	background-image: url("../images/LeaderBoard.png");
 }
 nav#menuNavLeft.menuNavLeft li#diplomes
+{
+	background-image: url("../images/Diploma.png");
+}
+nav#menuNavLeft.menuNavLeft li#suiviescolaire
 {
 	background-image: url("../images/Diploma.png");
 }
@@ -377,6 +380,8 @@ footer label{
 #AccueilBlock1 h1
 {
 	margin:0px;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
 }
 #AccueilBlock2
 {
@@ -1059,6 +1064,7 @@ div.search-box
 }
 
 
+
 /*************************************************************************************************
 
 										Accueil Eleves
@@ -1150,6 +1156,8 @@ div.search-box
 {
 	float: left;
 }
+
+
 
 .switch, #ProfCours
 {
@@ -1719,14 +1727,13 @@ div.search-box
 
 #ContentDuels
 {
-	margin-left: 20vw;
 	margin-top:8vw;
 	width:75vw;
 	display: flex;
 }
 #ContentPersonnagesJoueur1
 {
-	margin-left:7vw;
+	margin-left:1vw;
 }
 
 #ContentPersonnagesJoueur1,#ContentPersonnagesJoueur2
@@ -1741,7 +1748,7 @@ div.search-box
 	background-color: #271B58;
 	border-radius:15px;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	margin-right:3vw;
+	/* margin-right:2vw; */
 }
 
 #ContentPersonnagesGauche,#ContentPersonnagesDroite
@@ -1799,11 +1806,12 @@ div.search-box
 
 #ContentVS
 {	
-	margin-left:2vw;
+/* 	margin-left:1vw; */
 	color:white;
 	display: flex;
 	flex-direction: column;
-	margin-right:4vw;
+	align-content: center;
+/* 	margin-right:4vw; */
 	width: 30vw;
 	margin-top:9vw;
 }
@@ -1813,23 +1821,31 @@ div.search-box
 	padding-bottom: 2vw;
 	background-color: #542992;
 	border-radius:80px;
+	margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#ContentRouge:hover{
+	transform: translateY(-10px);
 }
 
 #ContentVS label,#ContentVS h1,#ContentVS h2
 {
 	font-size:2vw;
 	margin-top:1vw;
-	margin-left: 6.5vw;
+	/* margin-left: 6.5vw; */
+	text-align: center;
+	vertical-align: middle;
 }
-#ContentVS label
+/* #ContentVS label
 {
 	margin-left: 8vw;
-}
+} */
 
 #ContentVS h1
 {
 	font-size:1.5vw;
-	margin-left: 4vw;
+	/* margin-left: 4vw; */
 }
 
 #ContentVS h2
@@ -1838,10 +1854,14 @@ div.search-box
 	margin-top:0.2vw;
 }
 
+#TitreVS{
+	font-size : 3vw !important;
+}
+
 #ContentGoDuels
 {
-	margin-left:2vw;
-	margin-top:2vw;
+	margin-left:auto;
+	margin-right:auto;
 	font-weight: 900;
     font-size: 1vw;
     height: 3vw;
@@ -1851,7 +1871,7 @@ div.search-box
     justify-content: center;
     border: none;
     cursor: pointer;
-	width : 15vw;
+	width : max-content;
 	background: #000428; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to bottom, #271B58, rgb(39,27,88)); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to bottom, #271B58, rgb(39,27,88)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1876,17 +1896,14 @@ div.search-box
 #ContentQuestions
 {
 	display: flex;
-
 	width:75vw;
 	Height : 35vw;
-
 	transition: transform 250ms;
-
 	background-color: #271B58;
 	border-radius:15px;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-	margin-left:22vw;
-	margin-top:10vw;
+	margin-left:1vw;
+	margin-top:5vw;
 }
 
 #ContentQuestionsJoueur
@@ -1965,6 +1982,10 @@ div.search-box
 	margin:1vw;
 }
 
+#DescriptionAccueil{
+	padding-top: 3vw;
+}
+
 #ContentQuestionsReponses:hover
 {
 	transform: translateY(-10px);
@@ -1981,7 +2002,8 @@ div.search-box
 	height: 40px;
 	width: 500px;
 	margin-top:2vw;
-	margin-left:9vw;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .progress-value {
@@ -2069,7 +2091,7 @@ div.search-box
 
 /*************************************************************************************************
 
-										Questions
+										Liste elèves inscrits
 
 **************************************************************************************************/
 
@@ -2077,3 +2099,185 @@ div.search-box
 	margin-left:20vw;
 	color:white;
 }
+
+#ContenuGeneral{
+	margin-left:20vw;
+}
+
+#ContenuInterne{
+	display: flex;
+	flex-direction: column;
+	height: 1000px;
+}
+
+
+#EnteteInfos{
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 1em;
+	color: white;
+}
+
+#InfoBulles1{
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	align-items: center;
+
+	height: 2vw;
+	width:min-content;
+	background-color: #5E68ED;
+	border-radius:10px;
+	margin-left:  1vw;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+#InfosText{
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+	white-space:nowrap;
+	font-size: 0.8em;
+}
+
+#InfoEleve{
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	align-items: center;
+
+	height: 2vw;
+	width:min-content;
+	background-color: #542992;
+	border-radius:10px;
+	margin-left:  1vw;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin-top: 2vw;
+	color: white;
+}
+#Bar{
+	cursor: pointer;
+	transition: transform 250ms;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	opacity: 80%;
+	height: 1.8vw;
+	width:70em;
+	background-color: #FFFFFF;
+	border-radius:10px;
+	margin-left:  1vw;
+	padding-left: 1.5em;
+	padding-right: 3em;
+}
+#LogoRecherche{
+	margin-left: 1vw;;
+}
+
+#InfosTextSearch{
+	color: gray;
+}
+
+#SearchBar{
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#LogoRecherche:hover{
+	transform: translateY(-10px);
+}
+
+#InfoEleve:hover{
+	transform: translateY(-1px);
+}
+
+#ListeEleves{
+	width:80em;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/*************************************************************************************************
+
+										Suivie Scolaire
+
+**************************************************************************************************/
+
+#BodySuivieScolaire
+{
+	width:76vw;
+	height: 45vw;
+	margin-left:20vw;
+	margin-top: 5vw;
+	color:white;
+}
+
+#SuivieScolaireTelecharger{
+	margin-top: 1vw;
+	float: center;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#AnneeUniversitaire, #DiplômeUniversitaire{
+	float: left;
+	color: white;
+}
+
+#SuivieScolaireDiplomes{
+	display: flex;
+	margin-top: 1vw;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#SuivieScolaireDocument{
+	
+	background-color: turquoise;
+	width:63vw;
+	height: 35vw;
+	margin-left:6vw;
+	margin-top: 1vw;
+}
+
+#SuivieScolaireDocument img{
+	width:63vw;
+	height: 35vw;
+}
+#TelechargerDocument{
+	background-color: #5e68ed;
+	border-radius: 8px;
+	border: none;
+	color:white;
+	height: 3vw;
+    width: 20vw;
+		
+}
+#diplome, #semestre1 ,#semestre2{
+	background-color: #5e68ed;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    height: 2vw;
+    width: 10vw;
+	margin-right: 2vw;
+    font-size: 0.7vw;
+    margin-left: 1vw;
+}
+
+#SelectSuivieScolaire2{
+	margin-left: 1vw;
+    border-radius: 10px;
+}
+
+#SelectSuivieScolaire{
+	display: flex;
+}
+
+
