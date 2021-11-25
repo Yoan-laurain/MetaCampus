@@ -98,7 +98,7 @@ nav#menuNavLeft.menuNavLeft li {
 }
 
 
-nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion
+nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels, nav#menuNavLeft.menuNavLeft li#connexion,nav#menuNavLeft.menuNavLeft li#suiviescolaire
 {
 	background-repeat: no-repeat;
 	background-size: 1.5vw;
@@ -119,6 +119,10 @@ nav#menuNavLeft.menuNavLeft li#classement
 	background-image: url("../images/LeaderBoard.png");
 }
 nav#menuNavLeft.menuNavLeft li#diplomes
+{
+	background-image: url("../images/Diploma.png");
+}
+nav#menuNavLeft.menuNavLeft li#suiviescolaire
 {
 	background-image: url("../images/Diploma.png");
 }
@@ -1046,6 +1050,7 @@ div.search-box
 }
 
 
+
 /*************************************************************************************************
 
 										Accueil Eleves
@@ -1137,6 +1142,8 @@ div.search-box
 {
 	float: left;
 }
+
+
 
 .switch, #ProfCours
 {
@@ -2078,3 +2085,75 @@ div.search-box
 	margin-left:20vw;
 	color:white;
 }
+/*************************************************************************************************
+
+										Suivie Scolaire
+
+**************************************************************************************************/
+
+#BodySuivieScolaire
+{
+	width:76vw;
+	height: 45vw;
+	margin-left:20vw;
+	margin-top: 5vw;
+	color:white;
+}
+
+#SuivieScolaireTelecharger{
+	margin-top: 1vw;
+	float: center;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#AnneeUniversitaire, #DiplômeUniversitaire{
+	float: left;
+	color: white;
+}
+
+#SuivieScolaireDiplomes{
+	display: flex;
+	margin-top: 1vw;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#SuivieScolaireDocument{
+	
+	background-color: turquoise;
+	width:63vw;
+	height: 35vw;
+	margin-left:6vw;
+	margin-top: 1vw;
+}
+
+#SuivieScolaireDocument img{
+	width:63vw;
+	height: 35vw;
+}
+#TelechargerDocument{
+	background-color: #5e68ed;
+	border-radius: 8px;
+	border: none;
+	color:white;
+	height: 3vw;
+    width: 20vw;
+		
+}
+#diplome, #semestre1 ,#semestre2{
+	background-color: #5e68ed;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    height: 2vw;
+    width: 10vw;
+	margin-right: 2vw;
+    font-size: 0.7vw;
+    margin-left: 1vw;
+}
+
+
+
