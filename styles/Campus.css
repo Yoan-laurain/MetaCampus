@@ -99,7 +99,7 @@ nav#menuNavLeft.menuNavLeft li {
 }
 
 
-nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte
+nav#menuNavLeft.menuNavLeft li#AccueilEleves,nav#menuNavLeft.menuNavLeft li#cours,nav#menuNavLeft.menuNavLeft li#classement,nav#menuNavLeft.menuNavLeft li#diplomes,nav#menuNavLeft.menuNavLeft li#MonCompte,nav#menuNavLeft.menuNavLeft li#Duels
 {
 	background-repeat: no-repeat;
 	background-size: 1.5vw;
@@ -126,6 +126,11 @@ nav#menuNavLeft.menuNavLeft li#diplomes
 nav#menuNavLeft.menuNavLeft li#MonCompte
 {
 	background-image: url("../images/User.png");
+}
+
+nav#menuNavLeft.menuNavLeft li#Duels
+{
+	background-image: url("../images/VS.png");
 }
 
 nav#menuNavLeft.menuNavLeft li#MetaCampus{
