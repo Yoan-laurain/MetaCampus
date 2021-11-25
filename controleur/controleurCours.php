@@ -19,7 +19,7 @@ $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("ContentCours
                 $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionel"));
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage0"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\Wallet.png"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\langue.png"));
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage1"));
@@ -35,11 +35,11 @@ $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("ContentCours
                 $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionel"));
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage0"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\Wallet.png"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\maths.png"));
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage1"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", " Cours d'anglais approfondies"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", "Maths des chantiers"));
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage3"));
@@ -52,11 +52,27 @@ $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("ContentCours
                 $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionel"));
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage0"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\Wallet.png"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\progg.png"));
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage1"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", " Cours d'anglais approfondies"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", "Programmation WEB"));
+                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
+
+                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage3"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\plusCours.png"));
+                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
+
+                $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
+
+                $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionel"));
+
+                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage0"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\cahier.png"));
+                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
+
+                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage1"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", "Français"));
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage3"));
@@ -72,23 +88,7 @@ $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("ContentCours
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage1"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", " Cours d'anglais approfondies"));
-                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
-
-                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage3"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\plusCours.png"));
-                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
-
-                $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
-
-                $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionel"));
-
-                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage0"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerImage("images\Wallet.png"));
-                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
-
-                    $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage1"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", " Cours d'anglais approfondies"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", "Latin"));
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage3"));
