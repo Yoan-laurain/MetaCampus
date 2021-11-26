@@ -1402,6 +1402,10 @@ div.search-box
 										Mon Compte
 
 **************************************************************************************************/
+#MonCompteInventaire37600
+{
+	padding-bottom:2vw;
+}
 
 #BodyMonCompte
 {
@@ -1453,7 +1457,7 @@ div.search-box
 
 #MonCompteInfo, #MonCompteCarac,#MonCompteInventaire
 {
-	padding-bottom:2vw;
+	padding-bottom:1vw;
 	margin-left:1vw;
 	cursor: pointer;
 	transition: transform 250ms;
