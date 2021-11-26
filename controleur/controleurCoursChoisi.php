@@ -34,13 +34,13 @@ $coursChoisi->ajouterComposantLigne($coursChoisi->debutDiv("Content"));
 
         $coursChoisi->ajouterComposantLigne($coursChoisi->debutDiv("pieceJointes"));
 
-            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabel("pieceJ", "pieceJ", "Calcul mental"));
-            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabel("pieceJ", "pieceJ", "Nombres Complexes"));
-            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabel("pieceJ", "pieceJ", "Suites"));
+            $coursChoisi->ajouterComposantLigne($coursChoisi->creerLabelC("CM", "pieceJ", "Calcul mental"));
+            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabelC("NC", "pieceJ", "Nombres Complexes"));
+            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabelC("Suites", "pieceJ", "Suites"));
             
-            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabel("pieceJ", "pieceJ", "Algèbre de Bool"));
-            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabel("pieceJ", "pieceJ", "Cours"));
-            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabel("pieceJ", "pieceJ", "Exercices"));
+            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabelC("AB", "pieceJ", "Algèbre de Bool"));
+            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabelC("Cours", "pieceJ", "Cours"));
+            $coursChoisi->ajouterComposantLigne($coursChoisi->creerlabelC("EXO", "pieceJ", "Exercices"));
 
         $coursChoisi->ajouterComposantLigne($coursChoisi->finDiv());
 

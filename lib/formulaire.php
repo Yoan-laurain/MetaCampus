@@ -79,6 +79,11 @@ class Formulaire{
 		return $composant;
 	}
 
+	public function creerLabelC($unNom, $unId, $unLabel){
+		$composant = "<label Class ='" . $unNom . "' id ='" . $unId . "'>" . $unLabel . "</label>";
+		return $composant;
+	}
+
 	public function creerMessage($unMessage){
 		$composant = "<label class='message'>" . $unMessage . "</label>";
 		return $composant;

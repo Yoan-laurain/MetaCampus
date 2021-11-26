@@ -996,6 +996,7 @@ div.search-box
 
 #fCoursChoisi #pieceJ{
 	padding-top: 3vh;
+	transition: transform 250ms;
 	padding-bottom: 3vh;
 	padding-right: 6vh;
 	padding-left: 6vh;
@@ -1003,6 +1004,20 @@ div.search-box
 	background: #271B58;
 	border-radius: 10px;
 	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 1.5vw;
+	background-position: left;
+	background-position-y: center;
+	
+}
+
+#fCoursChoisi .CM{
+	background-image: url("../images/icons8-diviser-96.png");
+}
+
+#fCoursChoisi #pieceJ:hover{
+
+	transform: translateY(-10px);
 }
 
 #fCoursChoisi video{
