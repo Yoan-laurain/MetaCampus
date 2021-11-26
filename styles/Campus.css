@@ -104,7 +104,7 @@ nav#menuNavLeft.menuNavLeft.toggle {
     display: flex;
     position: absolute;
     top: 0px;
-    left: -360px;
+    left: -270px;
     height: 100vh;
     padding-right: 10vh;
     padding-left: 8vh;
