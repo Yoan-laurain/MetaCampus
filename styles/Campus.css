@@ -1220,6 +1220,16 @@ div.search-box
 	float: right;
 }
 
+
+
+#ProfGererCours{
+	margin-left: 32vw;
+}
+
+
+
+
+
 #EnCoursDevContent{
 	color: white;
 	margin:auto;
@@ -2116,6 +2126,11 @@ div.search-box
 
 #BourseCours h3{
 	margin-left: 4.8vw;
+}
+
+#BourseCours img{
+	width: 121%;
+    height: auto;
 }
 
 #BourseEchange h3, #BoutiqueItem h3{
