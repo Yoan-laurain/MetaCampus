@@ -19,7 +19,7 @@ $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("BodyAccueilProf"));
 
                 $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("CoursBlockStage1"));
                     $accueilProf->ajouterComposantLigne($accueilProf-> creerLabel("HeureCours", "HeureCours", "8H"));
-                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=ListeElevesInscrit", "Gerer","",""));
+                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=EnCoursDev", "Gerer","",""));
 
                 $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
 
@@ -29,7 +29,7 @@ $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("BodyAccueilProf"));
 
                 $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("CoursBlockStage3"));
                     $accueilProf->ajouterComposantLigne($accueilProf-> creerLabel("HeureCours", "HeureCours", "10H"));
-                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=ListeElevesInscrit", "Voir inscrit","",""));
+                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfInscritCours", "ProfInscritCours","index.php?MetaCampus=ListeElevesInscrit", "Voir inscrit","",""));
                 $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
 
             $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
@@ -38,7 +38,7 @@ $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("BodyAccueilProf"));
 
                 $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("CoursBlockStage1"));
                     $accueilProf->ajouterComposantLigne($accueilProf-> creerLabel("HeureCours", "HeureCours", "10H"));
-                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=AccueilEleves", "Gerer","",""));
+                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=EnCoursDev", "Gerer","",""));
                 $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
 
                 $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("CoursBlockStage2"));
@@ -47,7 +47,7 @@ $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("BodyAccueilProf"));
 
                 $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("CoursBlockStage3"));
                     $accueilProf->ajouterComposantLigne($accueilProf-> creerLabel("HeureCours", "HeureCours", "12H"));
-                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=ListeElevesInscrit", "Voir inscrit","",""));
+                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfInscritCours", "ProfInscritCours","index.php?MetaCampus=ListeElevesInscrit", "Voir inscrit","",""));
                 $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
 
             $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
@@ -56,7 +56,7 @@ $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("BodyAccueilProf"));
 
                 $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("CoursBlockStage1"));
                     $accueilProf->ajouterComposantLigne($accueilProf-> creerLabel("HeureCours", "HeureCours", "14H"));
-                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=AccueilEleves", "Gerer","",""));
+                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=EnCoursDev", "Gerer","",""));
                 $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
 
                 $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("CoursBlockStage2"));
@@ -66,7 +66,7 @@ $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("BodyAccueilProf"));
                 $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("CoursBlockStage3"));
                     $accueilProf->ajouterComposantLigne($accueilProf-> creerLabel("HeureCours", "HeureCours", "16H"));
                     
-                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=ListeElevesInscrit", "Voir inscrit","",""));
+                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfInscritCours", "ProfInscritCours","index.php?MetaCampus=ListeElevesInscrit", "Voir inscrit","",""));
                 $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
 
             $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
@@ -84,7 +84,7 @@ $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("BodyAccueilProf"));
 
                 $accueilProf->ajouterComposantLigne($accueilProf->debutDiv("CoursBlockStage3"));
                     $accueilProf->ajouterComposantLigne($accueilProf-> creerLabel("HeureCours", "HeureCours", "18H"));
-                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfGererCours", "ProfGererCours","index.php?MetaCampus=ListeElevesInscrit", "Voir inscrit","",""));
+                    $accueilProf->ajouterComposantLigne($accueilProf-> creerLabelLink("ProfInscritCours", "ProfInscritCours","index.php?MetaCampus=ListeElevesInscrit", "Voir inscrit","",""));
                 $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
 
             $accueilProf->ajouterComposantLigne($accueilProf->finDiv());
