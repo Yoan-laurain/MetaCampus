@@ -10,10 +10,9 @@ html, body
 
 main {
     width: 100%;
-    min-height: 60vw;
+    min-height: 50vw;
     margin: auto;
 	background-color: #2A2C31;
-	padding-top: 2vw;
 }
 
 
@@ -1091,7 +1090,7 @@ div.search-box
 #ContentAccueilElevesTitre
 {
 	font-size:1.8vw;
-	margin-top:2vw;
+	padding-top: 2vw;
 	font-weight: bold;
 	width:max-content;
 	color:white;
@@ -1143,7 +1142,7 @@ div.search-box
 #ContentAccueilProfTitre
 {
 	font-size:1.8vw;
-	margin-top:2vw;
+	padding-top: 2vw;
 	font-weight: bold;
 	width:max-content;
 	color:white;
@@ -1392,7 +1391,7 @@ div.search-box
 
 #BodyMonCompte
 {
-	width:80vw;
+	width:66vw;
 	margin-left:20vw;
 	color:white;
 }
@@ -1400,7 +1399,7 @@ div.search-box
 #ContentMonCompteTitre
 {
 	font-size:1.8vw;
-	margin-top:2vw;
+	padding-top: 2vw;
 	font-weight: bold;
 	width:max-content;
 	color:white;
@@ -1660,7 +1659,7 @@ div.search-box
 
 #coursEleveTitre{
 	font-size:1.8vw;
-	margin-top:2vw;
+	padding-top: 2vw;
 	font-weight: bold;
 	width:max-content;
 	color:white;
@@ -2289,7 +2288,7 @@ div.search-box
 	width:76vw;
 	height: 45vw;
 	margin-left:20vw;
-	margin-top: 5vw;
+	padding-top: 5vw;
 	color:white;
 }
 
@@ -2317,16 +2316,15 @@ div.search-box
 
 #SuivieScolaireDocument{
 	
-	background-color: turquoise;
-	width:63vw;
-	height: 35vw;
+	width:58vw;
+	height: 32vw;
 	margin-left:6vw;
 	margin-top: 1vw;
 }
 
 #SuivieScolaireDocument img{
 	width:63vw;
-	height: 35vw;
+	height: 30vw;
 }
 #TelechargerDocument{
 	background-color: #892cdc;
