@@ -25,7 +25,7 @@ $Questions->ajouterComposantLigne($Questions->debutDiv("ContentQuestions"));
     $Questions->ajouterComposantLigne($Questions->debutDiv("ContentQuestionsAsk"));
 
         $Questions->ajouterComposantLigne($Questions->debutDiv("ContentQuestionsAskTitre"));
-            $Questions->ajouterComposantLigne($Questions-> creerLabel("", "", "Combien font 3+3 ?"));      
+            $Questions->ajouterComposantLigne($Questions-> creerLabel("", "", "Combien fait 3+3 ?"));      
         $Questions->ajouterComposantLigne($Questions->finDiv());
 
         $Questions->ajouterComposantLigne($Questions->debutDiv("ContentQuestionsReponsesFull"));

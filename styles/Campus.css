@@ -10,10 +10,10 @@ html, body
 
 main {
     width: 100%;
-    min-height: 50vw;
+    min-height: 60vw;
     margin: auto;
 	background-color: #2A2C31;
-	overflow-x: hidden;
+	padding-top: 2vw;
 }
 
 
@@ -42,7 +42,7 @@ _   _               _
 	background-position-x: 1vw;
 	font-size:1vw;
 	transition: 0.3s;
-	background-size: 3vw;
+	background-size: 7vw;
 }
 
 #Navigation.active
@@ -91,8 +91,8 @@ nav#menuNavLeft.menuNavLeft {
     display: flex;
     position: absolute;
     top: 0px;
-	width: 360px;
-    left: -360px;
+	width: 270px;
+    left: -270px;
     height: 100vh;
 	padding-right: 10vh;
 	padding-left: 8vh;
@@ -193,6 +193,7 @@ nav#menuNavLeft.menuNavLeft li#MetaCampus{
 	font-weight: bold;
 	padding-bottom: 10vh;
 	font-size: 20;
+	width: 17vw;
 }
 
 nav#menuNavLeft.menuNavLeft li#connexion{
@@ -759,7 +760,7 @@ div.contentConnexion label
 #Remember
 {
 	width:inherit;
-	margin-left:0.5vw;
+	margin-left:1.4vw;
 	padding-bottom:1vw;
 }
 
@@ -901,7 +902,7 @@ div.search-box
 
 #fLeaderBoards #eleve{
 	margin-left:2vh;
-	margin-right: 62vh;
+	margin-right: 66vh;
 
 }
 
@@ -2131,6 +2132,11 @@ div.search-box
 	margin-left: 4.8vw;
 }
 
+#BourseCours img{
+	width: 121%;
+    height: auto;
+}
+
 #BourseEchange h3, #BoutiqueItem h3{
 	margin-left: 1vw;
 }
@@ -2298,6 +2304,7 @@ div.search-box
 #AnneeUniversitaire, #DiplômeUniversitaire{
 	float: left;
 	color: white;
+	margin-top: 1vw;
 }
 
 #SuivieScolaireDiplomes{
@@ -2322,16 +2329,17 @@ div.search-box
 	height: 35vw;
 }
 #TelechargerDocument{
-	background-color: #5e68ed;
+	background-color: #892cdc;
 	border-radius: 8px;
 	border: none;
 	color:white;
 	height: 3vw;
     width: 20vw;
+	box-shadow:0 7px 0 #542992;
 		
 }
 #diplome, #semestre1 ,#semestre2{
-	background-color: #5e68ed;
+	background-color: #892cdc;
     border-radius: 8px;
     border: none;
     color: white;
@@ -2340,6 +2348,7 @@ div.search-box
 	margin-right: 2vw;
     font-size: 0.7vw;
     margin-left: 1vw;
+	box-shadow:0 7px 0 #542992;
 }
 
 #SelectSuivieScolaire2{
@@ -2349,6 +2358,37 @@ div.search-box
 
 #SelectSuivieScolaire{
 	display: flex;
+	margin-bottom: 2vw;
 }
 
+select#selectAnnee
+{
+	background-color: #892cdc;
+	margin-left:20px;
+	width:10em;
+	height:2em;
+	border-color:transparent;
+	cursor:pointer;
+	border-radius:10px;
+	box-shadow:0 7px 0 #542992;
+	outline:0;
+	font-size:1vw;
+	text-align: center;
+	margin-top:0.5vw;
+	color:white;
+}
+select#selectAnnee:active
+{
+	box-shadow:none
+}
+select#selectAnnee:hover,#diplome:hover, #semestre1:hover ,#semestre2:hover,#TelechargerDocument:hover
+{
+	transform: translateY(-10px);
+}
+	
 
+select#selectAnnee option
+{
+  background-color:white;
+  border-radius:20px;
+}
