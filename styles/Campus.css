@@ -1231,6 +1231,7 @@ div.search-box
 .switch, #ProfCours
 {
 	float: right;
+	margin-left: 29vw;
 }
 
 #ProfGererCours{
@@ -1289,6 +1290,7 @@ div.search-box
 	display: inline-block;
 	width: 50px;
 	height: 24px;
+	margin-left: 33vw;
   }
   
   /* Hide default HTML checkbox */
