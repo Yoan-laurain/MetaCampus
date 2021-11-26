@@ -10,7 +10,7 @@ html, body
 
 main {
     width: 100%;
-    min-height: 53vw;
+    min-height: 57vw;
     margin: auto;
 	background-color: #2A2C31;
 }
@@ -1233,19 +1233,13 @@ div.search-box
 	float: right;
 }
 
-
-
 #ProfGererCours{
-	margin-left: 34vw;
+	margin-left: 31.5vw;
 }
 
 #ProfInscritCours{
-	margin-left: 32vw;
+	margin-left: 30vw;
 }
-
-
-
-
 
 #EnCoursDevContent{
 	color: white;
@@ -1270,8 +1264,8 @@ div.search-box
 #CoursBlockStage2
 {
 	width: max-content;
-	margin-top:0.7vw;
-	margin-bottom:0.7vw;
+	margin-top:0.6vw;
+	margin-bottom:0.6vw;
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -1280,6 +1274,7 @@ div.search-box
 {
 	margin-top:0.2vw;
 	height:1.5vw;
+	display: flex;
 }
 
 #CoursBlock:hover
@@ -1402,9 +1397,9 @@ div.search-box
 										Mon Compte
 
 **************************************************************************************************/
-#MonCompteInventaire37600
+#mainMonCompte
 {
-	padding-bottom:2vw;
+	min-height: 62vw;
 }
 
 #BodyMonCompte
@@ -1412,7 +1407,7 @@ div.search-box
 	width:66vw;
 	margin-left:20vw;
 	color:white;
-	padding-bottom: 2vw;
+
 }
 
 #ContentMonCompteTitre
@@ -1558,6 +1553,11 @@ div.search-box
 	height:2vw;
 	margin-top:1vw;
 	margin-bottom:1vw;
+}
+
+#BourseCours,#BourseEchange
+{
+	height: 27vw;
 }
 
 #MonCompteInfo:hover,#MonCompteCarac:hover,#MonCompteInventaire:hover, #BoutiqueItemCard:hover, #BoutiqueBonAchatCard:hover, #ItemAchat:hover
