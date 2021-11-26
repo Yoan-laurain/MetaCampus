@@ -9,7 +9,7 @@ $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("BodyMonCompte"));
     $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
     $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteContent"));
-        $MonCompte->ajouterComposantLigne($MonCompte->creerTitre((isset($_SESSION['identification']) ? $_SESSION['identification']->getPrenom() ." " . $_SESSION['identification']->getNom() : ""),1,"Titre"));
+        $MonCompte->ajouterComposantLigne($MonCompte->creerTitre((isset($_SESSION['identification']) ? $_SESSION['identification']->getPrenom() ." " . ucfirst($_SESSION['identification']->getNom()) : ""),1,"Titre"));
     $MonCompte->ajouterComposantLigne($MonCompte->finDiv());
 
     $MonCompte->ajouterComposantLigne($MonCompte->debutDiv("MonCompteStage2"));
