@@ -10,7 +10,7 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("topAccueil"));
 
             $accueil->ajouterComposantLigne($accueil->creerTitre("Meta Campus",1,"Titre"));
             $accueil->ajouterComposantLigne($accueil->creerTitre("Le Campus 3.0 qui vous fais envie",2,"SousTitre"));
-            $accueil->ajouterComposantLigne($accueil->creerTitre("Des milliers d'élèves à travers le monde, des opportunitées pour tous ! Rejoignez près de 10 000 étudiants en informatique et développez avec eux.",3,"SousTitre"));
+            $accueil->ajouterComposantLigne($accueil->creerTitre("Des milliers d'élèves à travers le monde, des opportunités pour tous ! Rejoignez près de 10 000 étudiants en informatique et développez avec eux.",3,"SousTitre"));
             $accueil->ajouterComposantLigne($accueil->creerInputSubmit("", "bouttonAccueil", "ON SE LANCE !", ""));
 
         $accueil->ajouterComposantLigne($accueil->finDiv());
@@ -24,7 +24,7 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil"));
    $accueil->ajouterComposantLigne($accueil->finDiv());
 
     $accueil->ajouterComposantLigne($accueil->debutDiv("AccueilBlock2"));
-        $accueil->ajouterComposantLigne($accueil->creerTitre("Des cours en réalité virtuelle, des diplômes reconnus et unique, certifiés par notre blockchain. Un système de personnage style RPG avec des duels, un classement et bien plus encore...",3,"DescriptionAccueil"));
+        $accueil->ajouterComposantLigne($accueil->creerTitre("Des cours en réalité virtuels, des diplômes reconnus et unique, certifiés par notre blockchain. Un système de personnage style RPG avec des duels, un classement et bien plus encore...",3,"DescriptionAccueil"));
     $accueil->ajouterComposantLigne($accueil->finDiv());
 
     $accueil->ajouterComposantLigne($accueil->debutDiv("AccueilBlock3-4"));
@@ -44,7 +44,7 @@ $accueil->ajouterComposantLigne($accueil->finDiv());
 $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil2"));
 
     $accueil->ajouterComposantLigne($accueil->creerTitre("BENEFICES",1,"Titre"));
-    $accueil->ajouterComposantLigne($accueil->creerTitre("Developpez vos capacitées, vos connaissances et votre esprit de camaraderie.",2,"SousTitre"));
+    $accueil->ajouterComposantLigne($accueil->creerTitre("Developpez vos capacités, vos connaissances et votre esprit de camaraderie.",2,"SousTitre"));
 
     $accueil->ajouterComposantLigne($accueil->debutDiv("First"));
 
@@ -68,7 +68,7 @@ $accueil->ajouterComposantLigne($accueil->debutDiv("bodyAccueil2"));
 
             $accueil->ajouterComposantLigne($accueil->creerImage("images\Planning.png"));
             $accueil->ajouterComposantLigne($accueil->creerTitre("Defiez vos camarades ",1,"Titre"));
-            $accueil->ajouterComposantLigne($accueil->creerTitre("Grâce à notre platforme style RPG, ayez accès à des duels, un classement et même une super boutique",2,"SousTitre"));
+            $accueil->ajouterComposantLigne($accueil->creerTitre("Grâce à notre plate-forme style RPG, ayez accès à des duels, un classement et même une super boutique",2,"SousTitre"));
 
         $accueil->ajouterComposantLigne($accueil->finDiv());
 

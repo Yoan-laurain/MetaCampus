@@ -58,7 +58,7 @@ if(!isset($_SESSION['identification']) || !$_SESSION['identification'])
 
 		$formulaireConnexion->ajouterComposantLigne($formulaireConnexion->debutDiv("DroiteConnexion"));
 
-			$formulaireConnexion->ajouterComposantLigne($formulaireConnexion->creerTitre("SIGN UP NOW"));
+			$formulaireConnexion->ajouterComposantLigne($formulaireConnexion->creerTitre("SE CONNECTER"));
 
 			$formulaireConnexion->ajouterComposantLigne($formulaireConnexion->creerLabel("","",'<h2>Identifiant :</h2>'));		
 			$formulaireConnexion->ajouterComposantLigne($formulaireConnexion->creerInputTexte('login', 'login', '', 1, 'Entrez votre identifiant', ''));

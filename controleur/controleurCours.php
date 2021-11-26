@@ -14,7 +14,7 @@ $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("ContentCours
 
             $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("SubTitle"));
 
-                $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerTitre("M'inscrire dans un cours supplémentaire",1,"Titre"));
+                $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->creerTitre("M'inscrire dans un cours supplémentaire",2,"Titre"));
 
                 $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionel"));
 
@@ -23,7 +23,7 @@ $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("ContentCours
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage1"));
-                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", " Cours d'anglais approfondies"));
+                        $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve-> creerLabel("NomMatiere", "NomMatiere", " Cours d'anglais approfondi"));
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->finDiv());
 
                     $ListeCoursEleve->ajouterComposantLigne($ListeCoursEleve->debutDiv("CoursBlockOptionelStage3"));
