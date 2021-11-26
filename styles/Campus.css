@@ -768,6 +768,10 @@ div.contentConnexion label
 
 **************************************************************************************************/
 
+#mainBlockChain
+{
+	min-height: 49vw;
+}
 #BlockChainContent
 {
 	background-image: url("../images/BgBlockChain.jpg");
