@@ -1128,7 +1128,7 @@ div.search-box
 
 #CoursBlock a{
 	height: 6vw;
-    width: 5vw;
+    width: 40vw;
 	text-decoration: none;
 }
 
@@ -1218,6 +1218,14 @@ div.search-box
 {
 	float: right;
 }
+
+
+
+#ProfGererCours{
+	margin-left: 32vw;
+}
+
+
 
 
 
