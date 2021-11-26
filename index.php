@@ -17,6 +17,7 @@ session_start();
 			require_once 'controleur/controleurPrincipal.php';	
 		?>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script type="text/javascript" src="JS\temp.js"></script>
 
 		<script>
 			$(document).ready( function()

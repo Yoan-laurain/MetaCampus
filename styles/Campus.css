@@ -10,7 +10,7 @@ html, body
 
 main {
     width: 100%;
-    min-height: 50vw;
+    min-height: 53vw;
     margin: auto;
 	background-color: #2A2C31;
 }
@@ -1393,6 +1393,7 @@ div.search-box
 	width:66vw;
 	margin-left:20vw;
 	color:white;
+	padding-bottom: 2vw;
 }
 
 #ContentMonCompteTitre
