@@ -91,13 +91,13 @@ nav#menuNavLeft.menuNavLeft {
     display: flex;
     position: absolute;
     top: 0px;
-	width: 360px;
-    left: -360px;
+    width: 360px;
+    left: 0px;
     height: 100vh;
-	padding-right: 10vh;
-	padding-left: 8vh;
-	text-decoration : none;
-	transition: 1s;
+    padding-right: 10vh;
+    padding-left: 8vh;
+    text-decoration : none;
+    transition: 1s;
 }
 
 nav#menuNavLeft.menuNavLeft.toggle {
@@ -105,38 +105,37 @@ nav#menuNavLeft.menuNavLeft.toggle {
     display: flex;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -360px;
     height: 100vh;
-	padding-right: 10vh;
-	padding-left: 8vh;
-	text-decoration : none;
+    padding-right: 10vh;
+    padding-left: 8vh;
+    text-decoration : none;
 }
 
 nav#menuNavLeft .menu_logo.toggle {
     background-image: url('../images/Fever2.png');
-	background-size: cover;
-  	background-position: center;
-	background-repeat: no-repeat;
-	left: 80%;
-	cursor: pointer;
-	transition: 1s;
+    background-size: cover;
+      background-position: center;
+    background-repeat: no-repeat;
+    left: 100%;
+    cursor: pointer;
+    transition: 1s;
 }
-
 nav#menuNavLeft .menu_logo {
-	background-image: url('../images/Sword.png');
-	background-size: cover;
-  	background-position: center;
-	background-repeat: no-repeat;
-	z-index: 999999;
-	left: 100%;
+    background-image: url('../images/Sword.png');
+    background-size: cover;
+      background-position: center;
+    background-repeat: no-repeat;
+    left: 80%;
     display: flex;
     position: absolute;
-	width: 35px;
-	height: 35px;
-	margin: 10px;
-	top: 0;
-	cursor: pointer;
-	transition: 1s;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    top: 0;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 999999;
 }
 
 nav#menuNavLeft.menuNavLeft li {
