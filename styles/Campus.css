@@ -2363,7 +2363,6 @@ select#selectAnnee
 	margin-left:20px;
 	width:10em;
 	height:2em;
-	font-weight:700;
 	border-color:transparent;
 	cursor:pointer;
 	border-radius:10px;
@@ -2372,6 +2371,7 @@ select#selectAnnee
 	font-size:1vw;
 	text-align: center;
 	margin-top:0.5vw;
+	color:white;
 }
 select#selectAnnee:active
 {
