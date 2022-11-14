@@ -4,5 +4,5 @@
 class Param {
 	public static $user = 'root';
 	public static $pass = '';
-	public static $dsn = 'mysql:host=localhost;dbname=MetaCampus;charset=utf8';
+	public static $dsn = 'mysql:host=localhost;dbname=metacampus;charset=utf8';
 }

@@ -42,7 +42,7 @@ class Utilisateur
         return $this->Golds;
     }
 
-    public function setPoints($point){
+    public function setPoints($points){
         $this->Points = $points;
     }
 
